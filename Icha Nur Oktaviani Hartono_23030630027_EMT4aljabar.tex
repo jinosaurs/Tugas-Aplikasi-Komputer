@@ -1,0 +1,5183 @@
+\documentclass{article}
+
+\usepackage{eumat}
+
+\begin{document}
+\begin{eulernotebook}
+\eulerheading{EMT untuk Perhitungan Aljabar}
+\begin{eulercomment}
+Pada notebook ini Anda belajar menggunakan EMT untuk melakukan berbagai perhitungan
+terkait dengan materi atau topik dalam Aljabar. Kegiatan yang harus Anda lakukan adalah
+sebagai berikut:
+
+- Membaca secara cermat dan teliti notebook ini;\\
+- Menerjemahkan teks bahasa Inggris ke bahasa Indonesia;\\
+- Mencoba contoh-contoh perhitungan (perintah EMT) dengan cara meng-ENTER setiap
+perintah EMT yang ada (pindahkan kursor ke baris perintah)\\
+- Jika perlu Anda dapat memodifikasi perintah yang ada dan memberikan
+keterangan/penjelasan tambahan terkait hasilnya.\\
+- Menyisipkan baris-baris perintah baru untuk mengerjakan soal-soal Aljabar dari file
+PDF yang saya berikan;\\
+- Memberi catatan hasilnya.\\
+- Jika perlu tuliskan soalnya pada teks notebook (menggunakan format LaTeX).\\
+- Gunakan tampilan hasil semua perhitungan yang eksak atau simbolik dengan format
+LaTeX. (Seperti contoh-contoh pada notebook ini.)
+
+\end{eulercomment}
+\eulersubheading{Contoh pertama}
+\begin{eulercomment}
+Menyederhanakan bentuk aljabar:
+
+\end{eulercomment}
+\begin{eulerformula}
+\[
+6x^{-3}y^5\times -7x^2y^{-9}
+\]
+\end{eulerformula}
+\begin{eulercomment}
+\end{eulercomment}
+\begin{eulerprompt}
+>$&6*x^(-3)*y^5*-7*x^2*y^(-9)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+-\frac{42}{x\,y^4}
+\]
+\end{eulerformula}
+\begin{eulercomment}
+Menjabarkan:
+
+\end{eulercomment}
+\begin{eulerformula}
+\[
+(6x^{-3}+y^5)(-7x^2-y^{-9})
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&showev('expand((6*x^(-3)+y^5)*(-7*x^2-y^(-9))))
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+{\it expand}\left(\left(-\frac{1}{y^9}-7\,x^2\right)\,\left(y^5+  \frac{6}{x^3}\right)\right)=-7\,x^2\,y^5-\frac{1}{y^4}-\frac{6}{x^3  \,y^9}-\frac{42}{x}
+\]
+\end{eulerformula}
+\eulersubheading{Soal Latihan Tambahan}
+\begin{eulercomment}
+1. Sederhanakan bentuk\\
+\end{eulercomment}
+\begin{eulerformula}
+\[
+\left(\frac{24a^{10}b^{-8}c^7}{12a^6b^{-3}c^5}\right)^{-5} \
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&((24*a^10*b^(-8)*c^7) / (12*a^6*b^(-3)*c^5))^(-5)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\frac{b^{25}}{32\,a^{20}\,c^{10}}
+\]
+\end{eulerformula}
+\begin{eulercomment}
+2. Sederhanakan
+
+\end{eulercomment}
+\begin{eulerformula}
+\[
+\left(\frac{125p^12q^{-14}r^22}{25p^8q^6r^{-15}}\right)^{-4} \
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&((125*p^12*q^(-14)*r^22) / (25*p^8*q^6*r^(-15)))^(-4)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\frac{q^{80}}{625\,p^{16}\,r^{148}}
+\]
+\end{eulerformula}
+\begin{eulercomment}
+3. Hitunglah hasil operasi berikut\\
+\end{eulercomment}
+\begin{eulerformula}
+\[
+\frac{[4 \times (8-6)^2+4] \times (3-2 \times 8)}{2^2 \times (2^3+5)} \
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&(4*(8-6)^2+4)*(3-2*8) / 2^2*(2^3+5)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+-845
+\]
+\end{eulerformula}
+\begin{eulercomment}
+4. Jabarkan\\
+\end{eulercomment}
+\begin{eulerformula}
+\[
+(m^{x-b} \times n^x+b)^x \times (m^b \times n^{-b})^x
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&showev('expand((m^(x-b)*n^(x+b))^x*(m^b*n^(-b))^x))
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+{\it expand}\left(\left(\frac{m^{b}}{n^{b}}\right)^{x}\,\left(m^{x-  b}\,n^{x+b}\right)^{x}\right)=\left(\frac{m^{b}}{n^{b}}\right)^{x}\,  \left(m^{x-b}\,n^{x+b}\right)^{x}
+\]
+\end{eulerformula}
+\begin{eulercomment}
+5. Hitunglah
+\end{eulercomment}
+\begin{eulerprompt}
+>$&(((x^r/y^t)^2*(x^2*r/y^4*t)^(-2))^(-3))
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\frac{r^6\,t^6}{x^{3\,\left(2\,r-4\right)}\,y^{3\,\left(8-2\,t  \right)}}
+\]
+\end{eulerformula}
+\begin{eulercomment}
+\end{eulercomment}
+\eulersubheading{Baris Perintah}
+\begin{eulercomment}
+Baris perintah dalam euler memuat satu atau beberapa perintah euler
+dan diikuti oleh semicolon ";" atau coma ",". Penggunaan semicolon
+artinya mencegah mencetak hasil perintah. Sedangkan penggunaan coma
+artinya setiap hasil dari perintah akan di cetak semuanya.
+
+Baris perintah dibawah hanya akan mencetak hasil dari ekspresi dan
+tidak akan mencetak hasil dari perintah yang mungkin ada sebelumnya ,
+misalnya perintah penugasan (assigments) atau perintah format (format
+commands).
+
+\end{eulercomment}
+\begin{eulerprompt}
+>r:=2; h:=4; pi*r^2*h/3
+\end{eulerprompt}
+\begin{euleroutput}
+  16.7551608191
+\end{euleroutput}
+\begin{eulercomment}
+Perintah harus diikuti dengan spasi, tanpa spasi baris perintah
+tersebut tidak dapat dijalankan. Baris perintah dibawah mencetak semua
+hasil perintahnya, karena baris perintah tersebut diikuti oleh koma.
+\end{eulercomment}
+\begin{eulerprompt}
+>pi*2*r*h, %+2*pi*r*h // Ingat tanda % menyatakan hasil perhitungan terakhir sebelumnya
+\end{eulerprompt}
+\begin{euleroutput}
+  50.2654824574
+  100.530964915
+\end{euleroutput}
+\begin{eulercomment}
+Baris perintah dijalankan dalam urutan setiap kali kita menekan tombol
+'enter'. Jika kita menjalankan baris perintah yang hasilnya bergantung
+pada baris perintah sebelumnya, maka kita akan mendapatkan hasi yang
+berbeda, tergantung dengan nilai inputnya.
+\end{eulercomment}
+\begin{eulerprompt}
+>x := 1;
+>x := cos(x) // nilai cosinus (x dalam radian)
+\end{eulerprompt}
+\begin{euleroutput}
+  0.540302305868
+\end{euleroutput}
+\begin{eulerprompt}
+>x := cos(x)
+\end{eulerprompt}
+\begin{euleroutput}
+  0.857553215846
+\end{euleroutput}
+\begin{eulercomment}
+Hasil dari cos x tersebut berbeda karena pada saat menjalankan
+perintah cos x yang pertama, x disini bernilai x (dari x := 1) dan
+menghasilkan hasil sekitar 0.540302305868. Sedangkan pada saat
+menjalankan perintah cos x yang kedua, x disini bernilai
+0.540302305868 atau hasil dari cos x sebelumnya. Oleh karena itu kita
+mendapatkan dua hasil yang berbeda.
+
+Dua baris perintah dihubungkan dengan "...", kedua baris perintah
+tersebut akan selalu dijalankan secara stimultan atau bersamaan.
+\end{eulercomment}
+\begin{eulerprompt}
+>x := 1.5; ...
+>x := (x+2/x)/2, x := (x+2/x)/2, x := (x+2/x)/2, 
+\end{eulerprompt}
+\begin{euleroutput}
+  1.41666666667
+  1.41421568627
+  1.41421356237
+\end{euleroutput}
+\begin{eulercomment}
+Penggunaan "..." merupakan salah satu fitur yang sangat bagus untuk
+baris perintah yang panjang. Dengan menekan tombol 'Ctrl+Return' atau
+'Ctrl+Enter' kita dapat memecah baris perintah menjadi dua atau lebih
+baris sehingga kita bisa mendapatkan keterbacaan yang lebih baik.
+'Ctrl+Backspace' digunakan untuk menggabungkan baris perintah yang
+tadi telah dipisahkan. Jika ingin menyembunyikan semua multi baris
+tersebut, kita dapat memanfaatkan 'Ctrl+L'. Untuk menyembunyikan baris
+tertentu, awali baris perintah dengan '\%+'.
+\end{eulercomment}
+\begin{eulerprompt}
+>%+ x=4+5; ...
+\end{eulerprompt}
+\begin{eulercomment}
+A line starting with \%\% will be completely invisible.
+\end{eulercomment}
+\begin{euleroutput}
+  81
+\end{euleroutput}
+\begin{eulercomment}
+Euler mensupport pengulangan dalam baris perintah, selama pengulangan
+tersebut masih berada dalam satu baris atau multi baris.
+\end{eulercomment}
+\begin{eulerprompt}
+>x=1; for i=1 to 5; x := (x+2/x)/2, end; // menghitung akar 2
+\end{eulerprompt}
+\begin{euleroutput}
+  1.5
+  1.41666666667
+  1.41421568627
+  1.41421356237
+  1.41421356237
+\end{euleroutput}
+\begin{eulercomment}
+Untuk tampilan baris perintah yang lebih baik, kita dapat memanfaatkan
+'...', sebagai berikut.
+\end{eulercomment}
+\begin{eulerprompt}
+>x := 1.5; // comments go here before the ...
+>repeat xnew:=(x+2/x)/2; until xnew~=x; ...
+>   x := xnew; ...
+>end; ...
+>x,
+\end{eulerprompt}
+\begin{euleroutput}
+  1.41421356237
+\end{euleroutput}
+\begin{eulercomment}
+Struktur kondisional (seperti if, else, dll) juga dapat digunakan
+dalam EMT.
+\end{eulercomment}
+\begin{eulerprompt}
+>if E^pi>pi^E; then "Thought so!", endif;
+\end{eulerprompt}
+\begin{euleroutput}
+  Thought so!
+\end{euleroutput}
+\begin{eulercomment}
+Saat akan mengeksekusi atau menjalankan baris perintah, posisi kursor
+dapat berada dimana saja asalkan masih dalam baris perintah. Untuk
+kembali ke baris perintah sebelumnya atau untuk melompat ke baris
+perintah selanjutnya, kita dapat menggunakan arrow keys. Atau bisa
+juga mengklik bagian komen diatas baris perintah untuk menuju ke baris
+perintah.
+
+Saat kita memindahkan posisi kursor di baris perintah, EMT akan dengan
+otomatis menghighlight bagian awal dan akhir tanda kurung. Selain itu,
+perhatikan juga baris statusnya. Setelah tanda kurung buka pada fungsi
+sqrt() atau akar pangkat dua, baris status akan menunjukan teks
+petunjuk untuk fungsi tersebut. Jalankan baris perintah dengan return
+key atau enter.
+\end{eulercomment}
+\begin{eulerprompt}
+>sqrt(sin(10°)/cos(20°))
+\end{eulerprompt}
+\begin{euleroutput}
+  0.429875017772
+\end{euleroutput}
+\begin{eulerprompt}
+>sqrt(4)
+\end{eulerprompt}
+\begin{euleroutput}
+  2
+\end{euleroutput}
+\begin{eulercomment}
+Untuk mendapatkan bantuan atau petunjuk untuk baris perintah terakhir,
+buka jendela bantuan dengan F1. Disitu, kita bisa memasukkan teks
+untuk dicari. Pada baris yang kosong, bantuan untuk jendela bantuan
+akan ditampilkan. Kita dapat menekan escape untuk menghapus baris,
+atau untuk menutup jendela bantuan.
+
+Kalian dapat menekan dua kali pada perintah manapun untuk membuka
+bantuan untuk perintah tersebut. Coba untuk menekan dua kali pada
+perintah exp dibawah ini.
+\end{eulercomment}
+\begin{eulerprompt}
+>exp(log(2.5))
+\end{eulerprompt}
+\begin{euleroutput}
+  2.5
+\end{euleroutput}
+\begin{eulercomment}
+Kalian juga dapat menggunakan fitur copy dan paste di Euler. Gunakan
+Ctrl-C dan Ctrl-V untuk copy dan paste. Untuk menandai teks, tarik
+mouse atau gunakan shift bersamaan dengan kursor. Selain itu, dapat
+juga menyalin tanda kurung yang di highlight.
+
+\end{eulercomment}
+\eulersubheading{Soal Latihan Tambahan Baris Perintah}
+\begin{eulerprompt}
+>x := 4;
+>x := 1/2*x
+\end{eulerprompt}
+\begin{euleroutput}
+  2
+\end{euleroutput}
+\begin{eulerprompt}
+>x := 1/2*x
+\end{eulerprompt}
+\begin{euleroutput}
+  1
+\end{euleroutput}
+\begin{eulercomment}
+Hasil dari x tersebut berbeda karena pada saat menjalankan perintah x
+:= 1/2*x yang pertama, nilai dari x disini adalah 4. Sedangkan pada
+saat menjalankan perintah x := 1/2*x yang kedua, nilai x yang dipakai
+adalah hasil dari perintah x := 1/2*x pertama, yaitu 2. Oleh karena
+itu hasil akhir yang kita dapatkan adalah 1.
+\end{eulercomment}
+\begin{eulerprompt}
+>sqrt(15)
+\end{eulerprompt}
+\begin{euleroutput}
+  3.87298334621
+\end{euleroutput}
+\begin{eulerprompt}
+>r := 5; pi*r^2
+\end{eulerprompt}
+\begin{euleroutput}
+  78.5398163397
+\end{euleroutput}
+\begin{eulerprompt}
+>sqrt(cos(15°))
+\end{eulerprompt}
+\begin{euleroutput}
+  0.982815255421
+\end{euleroutput}
+\begin{eulerprompt}
+>r := 156; h := 15; pi*r^2*h
+\end{eulerprompt}
+\begin{euleroutput}
+  1146806.98227
+\end{euleroutput}
+\eulersubheading{Basic Syntax}
+\begin{eulercomment}
+Euler tahu fungsi matematika yang biasa kita pakai. Seperti yang sudah
+duperlihatkan di atas, fungsi trigonometri bekerja pada radian atau
+derajat. Untuk mengubah ke derajat, tambahkan simbol derajat (dengan
+menggunakan tombol F7) pada nilai yang kita tentukan, atau gunakan
+fungsi rad(x). Fungsi akar pada Euler disebut dengan sqrt. Penulisan
+x\textasciicircum{}(1/2) juga bisa digunakan.
+
+Untuk menyimpan variable, gunakan antara '=' ata ':='. untuk
+mengklarifikasi, pengenalan pada notebook EMT ini menggunakan yang
+terakhir, yaitu ':='. Spasi dalam penyimpanan variabel tidak
+berpengaruh. Kita dapat menuliskan x=1 atau x = 1, keduanya memiliki
+arti yang sama. Namun, spasi dalam baris perintah perlu diperhatikan
+karena hal itu dioerlukan.
+
+Perintah yang lebih daru satu dipisahkan dengan ',' atau ';'. Tanda
+pemisah semicolon menyembunyikan output dari perintah. Di akhir baris
+perintah, diasumsikan terdapat tanda ',' jika tidak ada tanda
+semicolon.
+\end{eulercomment}
+\begin{eulerprompt}
+>g:=9.81; t:=2.5; 1/2*g*t^2
+\end{eulerprompt}
+\begin{euleroutput}
+  30.65625
+\end{euleroutput}
+\begin{eulercomment}
+EMT menggunakan sintaks programming untuk menulis ekspresi matematika.
+Untuk menulis
+
+\end{eulercomment}
+\begin{eulerformula}
+\[
+e^2 \cdot \left( \frac{1}{3+4 \log(0.6)}+\frac{1}{7} \right)
+\]
+\end{eulerformula}
+\begin{eulercomment}
+kita harus menggunakan tanda kurung dengan benar dan menggunakan tanda
+'/' untuk bentuk pecahan. Perhatikan highlight tanda kurung. Ingat
+bahwa konstanta Euler e pada EMT disimbolkan dengan E.
+\end{eulercomment}
+\begin{eulerprompt}
+>E^2*(1/(3+4*log(0.6))+1/7)
+\end{eulerprompt}
+\begin{euleroutput}
+  8.77908249441
+\end{euleroutput}
+\begin{eulercomment}
+Untuk bisa mengoperasikan ekspresi matematika yang kompleks, kita
+harus menuliskan ekspresti tersebut dengan format yang sesuai.
+Contohnya seperti:
+
+\end{eulercomment}
+\begin{eulerformula}
+\[
+\left(\frac{\frac17 + \frac18 + 2}{\frac13 + \frac12}\right)^2 \pi
+\]
+\end{eulerformula}
+\begin{eulercomment}
+Ingat bahwa untuk menuliskan pangkat negatif, menggunakan tanda kurung
+\{\}
+\end{eulercomment}
+\begin{eulerprompt}
+>((1/7 + 1/8 + 2) / (1/3 + 1/2))^2 * pi
+\end{eulerprompt}
+\begin{euleroutput}
+  23.2671801626
+\end{euleroutput}
+\begin{eulercomment}
+Selalu ingat untuk menambahkan tanda kurung dalam sub ekspresi yang
+perlu dioperasikan terlebih dahulu. EMT mempermudah kita dengan
+menghighlight bagian ekspresi yang termasuk ke dalam tanda kurung
+tertentu. Untuk menuliskan simbol pi, kita harus menulisnya dengan
+'pi' karena dalam EMT tidak tersedia simbol pi.
+\end{eulercomment}
+\begin{eulerprompt}
+>1/3+1/7, fraction %
+\end{eulerprompt}
+\begin{euleroutput}
+  0.47619047619
+  10/21
+\end{euleroutput}
+\begin{eulercomment}
+Perintah Euler dapat dalam bentuk ekspresi atau primitive command.
+Primitive command atau perintah dasar adalah perintah yang tidak
+dibangun dari perintah lainnya tetapi langsung dieksekusi oleh sistem.
+Suatu ekspresi dibentuk dari operasi atau fungsi. Jika diperlukan,
+kita harus menambahkan tanda kurung supaya mempermudah selama perintah
+di eksekusi. Selalu ingat bahwa EMT menghighlight tanda kurung selama
+proses editing baris perintah.
+\end{eulercomment}
+\begin{eulerprompt}
+>(cos(pi/4)+1)^3*(sin(pi/4)+1)^2
+\end{eulerprompt}
+\begin{euleroutput}
+  14.4978445072
+\end{euleroutput}
+\begin{eulercomment}
+Operasi numerik dalam Euler meliputi
+
++ untuk operator penambahan\\
+- untuk operator pengurangan\\
+*,/\\
+. untuk operator matriks produk\\
+a\textasciicircum{}b untuk menuliskan a pangkat b (atau dapat juga ditulis dengan a**b)\\
+n! untuk operator faktorial\\
+dan masih banyak laagi
+
+Berikut adalah beberapa fungsi yang mungkin kalian butuhkan.
+
+sin,cos,tan,atan,asin,acos,rad,deg\\
+\end{eulercomment}
+\begin{eulerttcomment}
+ log,exp,log10,sqrt,logbase
+ bin,logbin,logfac,mod,floor,ceil,round,abs,sign
+ conj,re,im,arg,conj,real,complex
+ beta,betai,gamma,complexgamma,ellrf,ellf,ellrd,elle
+ bitand,bitor,bitxor,bitnot
+\end{eulerttcomment}
+\begin{eulercomment}
+
+Beberapa perintah mempunyai nama lain, misalnya seperti ln, mempunyai
+makna yang sama dengan log.
+\end{eulercomment}
+\begin{eulerprompt}
+>ln(E^2), arctan(tan(0.5))
+\end{eulerprompt}
+\begin{euleroutput}
+  2
+  0.5
+\end{euleroutput}
+\begin{eulerprompt}
+>sin(30°)
+\end{eulerprompt}
+\begin{euleroutput}
+  0.5
+\end{euleroutput}
+\begin{eulercomment}
+Pastikan untuk memakai tanda kurung supaya memudahkan perhitungan.
+2\textasciicircum{}3\textasciicircum{}4 tidak sama dengan (2\textasciicircum{}3)\textasciicircum{}4.
+\end{eulercomment}
+\begin{eulerprompt}
+>2^3^4, (2^3)^4, 2^(3^4)
+\end{eulerprompt}
+\begin{euleroutput}
+  2.41785163923e+24
+  4096
+  2.41785163923e+24
+\end{euleroutput}
+\eulersubheading{Soal Latihan Tambahan Basic Sytanx}
+\begin{eulerprompt}
+>((2/9)+4+6/17)*E^2
+\end{eulerprompt}
+\begin{euleroutput}
+  33.8061390147
+\end{euleroutput}
+\begin{eulerprompt}
+>ln(E^(-3))
+\end{eulerprompt}
+\begin{euleroutput}
+  -3
+\end{euleroutput}
+\begin{eulerprompt}
+>tan(156°)
+\end{eulerprompt}
+\begin{euleroutput}
+  -0.445228685309
+\end{euleroutput}
+\begin{eulerprompt}
+>sin(pi/5)-tan(2*pi)
+\end{eulerprompt}
+\begin{euleroutput}
+  0.587785252292
+\end{euleroutput}
+\begin{eulerprompt}
+>(4^11)^3
+\end{eulerprompt}
+\begin{euleroutput}
+  7.37869762948e+19
+\end{euleroutput}
+\eulersubheading{Bilangan Asli}
+\begin{eulercomment}
+Tipe data dalam Euler adalah bilangan asli. Dalam format IEEE,
+bilangan asli memiliki akurasi sekitar 16 desimal.
+\end{eulercomment}
+\begin{eulerprompt}
+>longest 1/3
+\end{eulerprompt}
+\begin{euleroutput}
+       0.3333333333333333 
+\end{euleroutput}
+\begin{eulercomment}
+Representasi ganda internal membutuhkan 8 byte.
+\end{eulercomment}
+\begin{eulerprompt}
+>printdual(1/3)
+\end{eulerprompt}
+\begin{euleroutput}
+  1.0101010101010101010101010101010101010101010101010101*2^-2
+\end{euleroutput}
+\begin{eulerprompt}
+>printhex(1/3)
+\end{eulerprompt}
+\begin{euleroutput}
+  5.5555555555554*16^-1
+\end{euleroutput}
+\eulersubheading{Soal Latihan Tambahan Bilangan Real}
+\begin{eulerprompt}
+>longest 19/15
+\end{eulerprompt}
+\begin{euleroutput}
+        1.266666666666667 
+\end{euleroutput}
+\begin{eulerprompt}
+>printdual(19/25)
+\end{eulerprompt}
+\begin{euleroutput}
+  1.1000010100011110101110000101000111101011100001010010*2^-1
+\end{euleroutput}
+\begin{eulerprompt}
+>longest 11/147
+\end{eulerprompt}
+\begin{euleroutput}
+      0.07482993197278912 
+\end{euleroutput}
+\begin{eulerprompt}
+>printdual(11/147)
+\end{eulerprompt}
+\begin{euleroutput}
+  1.0011001010000000110111101110100101011100010011001010*2^-4
+\end{euleroutput}
+\begin{eulerprompt}
+>printhex(11/147)
+\end{eulerprompt}
+\begin{euleroutput}
+  1.3280DEE95C4CA*16^-1
+\end{euleroutput}
+\eulersubheading{Strings}
+\begin{eulercomment}
+String dalam Euler didefinisikan dengan "..."
+\end{eulercomment}
+\begin{eulerprompt}
+>"A string can contain anything."
+\end{eulerprompt}
+\begin{euleroutput}
+  A string can contain anything.
+\end{euleroutput}
+\begin{eulercomment}
+String dapat dihubungkan dengan \textbar{} atau dengan +. Aturan ini juga
+berlaku untuk angka, dimana dalam kasus tersebut, angkat tersebut
+diubah ke dalama bentuk string.
+\end{eulercomment}
+\begin{eulerprompt}
+>"The area of the circle with radius " + 2 + " cm is " + pi*4 + " cm^2."
+\end{eulerprompt}
+\begin{euleroutput}
+  The area of the circle with radius 2 cm is 12.5663706144 cm^2.
+\end{euleroutput}
+\begin{eulercomment}
+Fungsi print juga dapat mengonversi angka ke string. Fungsi ini dapat
+mengambil sejumlah digit dan sejumlah sejumllah tempat desimal dalam
+satu unit.
+\end{eulercomment}
+\begin{eulerprompt}
+>"Golden Ratio : " + print((1+sqrt(5))/2,5,0)
+\end{eulerprompt}
+\begin{euleroutput}
+  Golden Ratio : 1.61803
+\end{euleroutput}
+\begin{eulercomment}
+Dalam Python, ada string khusus yang tidak dicetak, yaitu string none.
+None bukan merupakan string melainkan sebuah objek khusus untuk
+mewakili tidak adanya nilai atau nilai kosong. Jika sebuah fungsi
+dijalankakn dan tidak ada nilai yang dikembalikan, maka hasil yang
+akan didapatkan adalah none. 
+\end{eulercomment}
+\begin{eulerprompt}
+>none
+\end{eulerprompt}
+\begin{eulercomment}
+Untuk mengonversi string ke angka, kalian cukup mengevaluasikan saja.
+Cara ini bekerja untuk ekspresi berikut.
+\end{eulercomment}
+\begin{eulerprompt}
+>"1234.5"()
+\end{eulerprompt}
+\begin{euleroutput}
+  1234.5
+\end{euleroutput}
+\begin{eulercomment}
+Untuk mendefinisikan vektor string, gunakan notasi vektor yaitu [...].
+\end{eulercomment}
+\begin{eulerprompt}
+>v:=["affe","charlie","bravo"]
+\end{eulerprompt}
+\begin{euleroutput}
+  affe
+  charlie
+  bravo
+\end{euleroutput}
+\begin{eulercomment}
+String kosong dilambangkan dengan [none]. Vektor string dapat
+digabungkan.
+\end{eulercomment}
+\begin{eulerprompt}
+>w:=[none]; w|v|v
+\end{eulerprompt}
+\begin{euleroutput}
+  affe
+  charlie
+  bravo
+  affe
+  charlie
+  bravo
+\end{euleroutput}
+\begin{eulercomment}
+String dapat memuat karakter Unicode, yaitu sistem pengkodean karakter
+yang dirancang untuk mencakup semua karakter dari berbagai bahsa san
+sistem oenulisan di seluruh dunia. String ini memuat kode UTF-8. Untuk
+menghasilkan string yang seperti itu, gunakan u"..." dan satu dari
+entitas HTML.
+
+Unicode string juga dapat digabungkan sama dengan jenis string yang
+lainnya.
+\end{eulercomment}
+\begin{eulerprompt}
+>u"&alpha; = " + 45 + u"&deg;" // pdfLaTeX mungkin gagal menampilkan secara benar
+\end{eulerprompt}
+\begin{euleroutput}
+  α = 45°
+\end{euleroutput}
+\begin{eulercomment}
+I
+\end{eulercomment}
+\begin{eulercomment}
+Dalam komentar, entitas simbol seperti α, β dll dapat
+digunakan. Ini mungkin adalah alternatif cepat untuk Latex. (Detail
+yang lebih lengkap ada di kolom komentar).
+\end{eulercomment}
+\begin{eulercomment}
+Ada beberapa fungsi untuk membuat atau menganalisis unicode string.
+Fungsi strtochar() akan mengenali unicode string dan menerjemahkan
+unicode string tersebut secara tepat.
+\end{eulercomment}
+\begin{eulerprompt}
+>v=strtochar(u"&Auml; is a German letter")
+\end{eulerprompt}
+\begin{euleroutput}
+  [196,  32,  105,  115,  32,  97,  32,  71,  101,  114,  109,  97,  110,
+  32,  108,  101,  116,  116,  101,  114]
+\end{euleroutput}
+\begin{eulercomment}
+Hasil dari baris perintah tersebut adalah vektor angka unicode. Fungsi
+untuk mengkorversi adalah chartoutf().
+\end{eulercomment}
+\begin{eulerprompt}
+>v[1]=strtochar(u"&Uuml;")[1]; chartoutf(v)
+\end{eulerprompt}
+\begin{euleroutput}
+  Ü is a German letter
+\end{euleroutput}
+\begin{eulercomment}
+Fungsi utf() dapat menerjemahkan string yang disertai dengan simbol
+dalam variabel ke dalam unicode string.
+\end{eulercomment}
+\begin{eulerprompt}
+>s="We have &alpha;=&beta;."; utf(s) // pdfLaTeX mungkin gagal menampilkan secara benar
+\end{eulerprompt}
+\begin{euleroutput}
+  We have α=β.
+\end{euleroutput}
+\begin{eulercomment}
+Hal ini juga berlaku saat menggunakan simbol numerik.
+\end{eulercomment}
+\begin{eulerprompt}
+>u"&#196;hnliches"
+\end{eulerprompt}
+\begin{euleroutput}
+  Ähnliches
+\end{euleroutput}
+\eulersubheading{Soal Latihan Tambahan String}
+\begin{eulerprompt}
+>"Fakultas Matematika dan Ilmu Pengetahuan Alam"
+\end{eulerprompt}
+\begin{euleroutput}
+  Fakultas Matematika dan Ilmu Pengetahuan Alam
+\end{euleroutput}
+\begin{eulerprompt}
+>"Luas lingkaran dengan jari-jari " + 5 + " cm adalah " + 78.5398163397 + ""
+\end{eulerprompt}
+\begin{euleroutput}
+  Luas lingkaran dengan jari-jari 5 cm adalah 78.5398163397
+\end{euleroutput}
+\begin{eulerprompt}
+>none
+>a:=["Aplikasi Komputer","Logika dan Himpunan","Geometri Analitik"]
+\end{eulerprompt}
+\begin{euleroutput}
+  Aplikasi Komputer
+  Logika dan Himpunan
+  Geometri Analitik
+\end{euleroutput}
+\begin{eulerprompt}
+>b:=[none]; a|b|a
+\end{eulerprompt}
+\begin{euleroutput}
+  Aplikasi Komputer
+  Logika dan Himpunan
+  Geometri Analitik
+  Aplikasi Komputer
+  Logika dan Himpunan
+  Geometri Analitik
+\end{euleroutput}
+\eulersubheading{Nilai Boolean }
+\begin{eulercomment}
+Boolean values are represented with 1=true or 0=false in Euler.
+Strings can be compared, just like numbers.Nilai boolean dilambangkan
+dengan 1=true atau 0=false di Euler. 
+\end{eulercomment}
+\begin{eulerprompt}
+>2<1, "apel"<"banana"
+\end{eulerprompt}
+\begin{euleroutput}
+  0
+  1
+\end{euleroutput}
+\begin{eulercomment}
+Pada bahasa C, "\&\&" merupakan operator untuk "and" dan "\textbar{}\textbar{}" adalah
+operator untuk "or".(Kata "and" dan "or" hanya dapat digunakan pada
+kondisi untuk "if").
+\end{eulercomment}
+\begin{eulerprompt}
+>2<E && E<3
+\end{eulerprompt}
+\begin{euleroutput}
+  1
+\end{euleroutput}
+\begin{eulercomment}
+Operator boolean mengikuti aturan pada bahasa matriks.
+\end{eulercomment}
+\begin{eulerprompt}
+>(1:10)>5, nonzeros(%)
+\end{eulerprompt}
+\begin{euleroutput}
+  [0,  0,  0,  0,  0,  1,  1,  1,  1,  1]
+  [6,  7,  8,  9,  10]
+\end{euleroutput}
+\begin{eulercomment}
+Kalian dapat menggunakan fungsi nonzeros() untuk mengekstrak elemen
+tertentu dari vektor. Sebagai contoh, kita menggunakan kondisi
+isprime(n).
+
+Baris perintah dibawah digunakan untuk memanggil anggota N, yaitu
+elemen 2 dan bilangan ganjil dari 3 sampai dengan 99.
+\end{eulercomment}
+\begin{eulerprompt}
+>N=2|3:2:99 // N berisi elemen 2 dan bilangan2 ganjil dari 3 s.d. 99
+\end{eulerprompt}
+\begin{euleroutput}
+  [2,  3,  5,  7,  9,  11,  13,  15,  17,  19,  21,  23,  25,  27,  29,
+  31,  33,  35,  37,  39,  41,  43,  45,  47,  49,  51,  53,  55,  57,
+  59,  61,  63,  65,  67,  69,  71,  73,  75,  77,  79,  81,  83,  85,
+  87,  89,  91,  93,  95,  97,  99]
+\end{euleroutput}
+\begin{eulercomment}
+Baris perintah dibawah digunakan untuk memanggil bilangan prima yang
+ada dalam vektor N tadi.
+\end{eulercomment}
+\begin{eulerprompt}
+>N[nonzeros(isprime(N))] //pilih anggota2 N yang prima
+\end{eulerprompt}
+\begin{euleroutput}
+  [2,  3,  5,  7,  11,  13,  17,  19,  23,  29,  31,  37,  41,  43,  47,
+  53,  59,  61,  67,  71,  73,  79,  83,  89,  97]
+\end{euleroutput}
+\eulersubheading{Soal Latihan Tambahan Nilai Boolean}
+\begin{eulerprompt}
+>pi<E
+\end{eulerprompt}
+\begin{euleroutput}
+  0
+\end{euleroutput}
+\begin{eulerprompt}
+>5>E && E>1
+\end{eulerprompt}
+\begin{euleroutput}
+  1
+\end{euleroutput}
+\begin{eulerprompt}
+>(17:25)>20
+\end{eulerprompt}
+\begin{euleroutput}
+  [0,  0,  0,  0,  1,  1,  1,  1,  1]
+\end{euleroutput}
+\begin{eulerprompt}
+>A=1:5:50
+\end{eulerprompt}
+\begin{euleroutput}
+  [1,  6,  11,  16,  21,  26,  31,  36,  41,  46]
+\end{euleroutput}
+\begin{eulerprompt}
+>A[nonzeros(isprime(A))]
+\end{eulerprompt}
+\begin{euleroutput}
+  [11,  31,  41]
+\end{euleroutput}
+\eulersubheading{Output Formats}
+\begin{eulercomment}
+Hasil default yang dicetak dalam EMT ada 12 digit. Untuk memastikan
+kita melihat hasil default nya, kita perlu mereset format tersebut.
+\end{eulercomment}
+\begin{eulerprompt}
+>defformat; pi
+\end{eulerprompt}
+\begin{euleroutput}
+  3.14159265359
+\end{euleroutput}
+\begin{eulercomment}
+EMT menggunakan standar IEEE untuk mencetak angka double, yaitu hingga
+16 digit desimal. Untuk melihat versi lengkap dari digit angka,
+gunakan perintah "longestformat" atau juga bisa gunakan operator
+"longest" untuk memperlihatkan hasil dalam versi yang paling panjang.
+\end{eulercomment}
+\begin{eulerprompt}
+>longest pi
+\end{eulerprompt}
+\begin{euleroutput}
+        3.141592653589793 
+\end{euleroutput}
+\begin{eulercomment}
+Di bawah ini merupakan representasi dari angka double dalam format
+heksadesimal (basis 16).
+\end{eulercomment}
+\begin{eulerprompt}
+>printhex(pi)
+\end{eulerprompt}
+\begin{euleroutput}
+  3.243F6A8885A30*16^0
+\end{euleroutput}
+\begin{eulercomment}
+Format hasil dapat diubah secara permanen dengan perintah format.
+\end{eulercomment}
+\begin{eulerprompt}
+>format(12,5); 1/3, pi, sin(1)
+\end{eulerprompt}
+\begin{euleroutput}
+      0.33333 
+      3.14159 
+      0.84147 
+\end{euleroutput}
+\begin{eulercomment}
+Baris perintah di atas memerintahkan untuk mencetak hasil desimal dari
+1/3, pi, dan sin 1 dalam format 5 digit desimal.
+
+Bentuk defaultnya ada 12 digit.
+\end{eulercomment}
+\begin{eulerprompt}
+>format(12); 1/3
+\end{eulerprompt}
+\begin{euleroutput}
+  0.333333333333
+\end{euleroutput}
+\begin{eulercomment}
+Fungsi seperti "shortestformat", "shortformat", "longformat" dapat
+bekerja pada vektor dengan cara sebagai berikut.
+\end{eulercomment}
+\begin{eulerprompt}
+>shortestformat; random(3,8)
+\end{eulerprompt}
+\begin{euleroutput}
+    0.66    0.2   0.89   0.28   0.53   0.31   0.44    0.3 
+    0.28   0.88   0.27    0.7   0.22   0.45   0.31   0.91 
+    0.19   0.46  0.095    0.6   0.43   0.73   0.47   0.32 
+\end{euleroutput}
+\begin{eulercomment}
+Format default untuk skalar adalah format(12), tetapi kita dapat
+mengubahnya berbeda dengan format default.
+\end{eulercomment}
+\begin{eulerprompt}
+>setscalarformat(5); pi
+\end{eulerprompt}
+\begin{euleroutput}
+  3.1416
+\end{euleroutput}
+\begin{eulercomment}
+Fungsi "longestformat" juga mengatur format skalar.
+\end{eulercomment}
+\begin{eulerprompt}
+>longestformat; pi
+\end{eulerprompt}
+\begin{euleroutput}
+  3.141592653589793
+\end{euleroutput}
+\begin{eulercomment}
+Sebagai referensi, berikut adalah daftar format output yang paling
+penting.
+
+\end{eulercomment}
+\begin{eulerttcomment}
+ shortestformat shortformat longformat, longestformat
+ format(length,digits) goodformat(length)
+ fracformat(length)
+ defformat
+\end{eulerttcomment}
+\begin{eulercomment}
+
+Akurasi internal EMT adalah sekitar 16 digit desimal, yang merupakan
+standar IEEE. Angka disimpan dalam format internal ini.
+
+Akan tetapi, fortmat output EMT dapat diatur dengan cara yang lebih
+fleksibel.
+\end{eulercomment}
+\begin{eulerprompt}
+>longestformat; pi,
+\end{eulerprompt}
+\begin{euleroutput}
+  3.141592653589793
+\end{euleroutput}
+\begin{eulerprompt}
+>format(10,5); pi
+\end{eulerprompt}
+\begin{euleroutput}
+    3.14159 
+\end{euleroutput}
+\begin{eulercomment}
+Defaultnya adalah defformat().
+\end{eulercomment}
+\begin{eulerprompt}
+>defformat; // default
+\end{eulerprompt}
+\begin{eulercomment}
+Terdapat operator pendek yang hanya akan mencetak satu nilai. Operator
+"longest" akan mencetak semua digit angka yang valid.
+\end{eulercomment}
+\begin{eulerprompt}
+>longest pi^2/2
+\end{eulerprompt}
+\begin{euleroutput}
+        4.934802200544679 
+\end{euleroutput}
+\begin{eulercomment}
+Selain itu, ada juga operator pendek yang digunakan untuk mencetak
+hasil dalam format pecahan. Kita telah menggunakan operator tersebut
+diatas.
+\end{eulercomment}
+\begin{eulerprompt}
+>fraction 1+1/2+1/3+1/4
+\end{eulerprompt}
+\begin{euleroutput}
+  25/12
+\end{euleroutput}
+\begin{eulercomment}
+Karena format internal menggunakan cara biner untuk menyimpan angka,
+maka nilai 0.1 tidal akan terwakili dengan tepat. Kesalahan bertambah
+sedikit, seperti yang kalian lihat dalam perhitungan berikut ini.
+\end{eulercomment}
+\begin{eulerprompt}
+>longest 0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1-1
+\end{eulerprompt}
+\begin{euleroutput}
+   -1.110223024625157e-16 
+\end{euleroutput}
+\begin{eulercomment}
+Tapi dengan default "longformat", kalian tidak akan menyadari hal ini.
+Untuk kenyamanan, output angka yang sangat kecil adalah 0.
+\end{eulercomment}
+\begin{eulerprompt}
+>0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1-1
+\end{eulerprompt}
+\begin{euleroutput}
+  0
+\end{euleroutput}
+\eulersubheading{Soal Latihan Tambahan Output Format}
+\begin{eulerprompt}
+>defformat; E
+\end{eulerprompt}
+\begin{euleroutput}
+  2.71828182846
+\end{euleroutput}
+\begin{eulerprompt}
+>longest E
+\end{eulerprompt}
+\begin{euleroutput}
+        2.718281828459045 
+\end{euleroutput}
+\begin{eulerprompt}
+>short E
+\end{eulerprompt}
+\begin{euleroutput}
+  2.7183
+\end{euleroutput}
+\begin{eulerprompt}
+>printhex(E)
+\end{eulerprompt}
+\begin{euleroutput}
+  2.B7E151628AED2*16^0
+\end{euleroutput}
+\begin{eulerprompt}
+>format(12,4); E
+\end{eulerprompt}
+\begin{euleroutput}
+       2.7183 
+\end{euleroutput}
+\eulerheading{Ekspresi}
+\begin{eulercomment}
+String atau nama dapat digunakan untuk menyimpan ekspresi matematika,
+yang mana dapat dioperasikan dengan EMT. Untuk ini, gunakan tanda
+kurung setelah ekspresi. Jika kalian bermaksud untuk menggunakan
+string sebagai ekspresi, gunakan konvensi untuk menamainya "fx" atau
+"fxy" dsb. Ekspresi lebih diutamakan atau didahulukan daripada fungsi.
+
+Variable global dapat digunakan dalam evaluasi.
+\end{eulercomment}
+\begin{eulerprompt}
+>r:=2; fx:="pi*r^2"; longest fx()
+\end{eulerprompt}
+\begin{euleroutput}
+        12.56637061435917 
+\end{euleroutput}
+\begin{eulercomment}
+Parameter ditetapkan ke x,y, dan z dalam urutan tersebut. Parameter
+tambahan dapat ditambahkan dengan menggunakan parameter yang
+ditetapkan.
+\end{eulercomment}
+\begin{eulerprompt}
+>fx:="a*sin(x)^2"; fx(5,a=-1)
+\end{eulerprompt}
+\begin{euleroutput}
+      -0.9195 
+\end{euleroutput}
+\begin{eulercomment}
+Ingat bahwa ekspresi akan selalu menggunakan variabel global, bahkan
+jika ada variabel dalam suatu fungsi dengan nama yang sama. (Jika
+tidak, evaluasi ekspresi dalam fungsi dapat memberikan hasil yang
+sangat membingungkan bagi pengguna yang memanggil fungsi tersebut.)
+\end{eulercomment}
+\begin{eulerprompt}
+>at:=4; function f(expr,x,at) := expr(x); ...
+>f("at*x^2",3,5) // computes 4*3^2 not 5*3^2
+\end{eulerprompt}
+\begin{euleroutput}
+      36.0000 
+\end{euleroutput}
+\begin{eulercomment}
+Jika kalian ingin menggunakan nilai lain untuk "at" selain variabel
+global,kalian perlu menambahkan "at=value".
+\end{eulercomment}
+\begin{eulerprompt}
+>at:=4; function f(expr,x,a) := expr(x,at=a); ...
+>f("at*x^2",3,5)
+\end{eulerprompt}
+\begin{euleroutput}
+      45.0000 
+\end{euleroutput}
+\begin{eulercomment}
+Untuk referensi, kami menyatakan bahwa koleksi panggilan (dibahas di
+bagian lain) dapat berisi ekspresi. Jadi kita akan membuat contoh di
+atas sebagai berikut.
+\end{eulercomment}
+\begin{eulerprompt}
+>at:=4; function f(expr,x) := expr(x); ...
+>f(\{\{"at*x^2",at=5\}\},3)
+\end{eulerprompt}
+\begin{euleroutput}
+      45.0000 
+\end{euleroutput}
+\begin{eulercomment}
+Ekspresi di x tidak sering digunakan seperti fungsi. Ingat bahwa
+mendefinisikan suatu fungsi dengan nama yang sama seperti ekspresi
+simbolik global akan menghaous variabel ini untuk menghindari
+kebingungan antara ekspresi simbolik dan fungsi.
+\end{eulercomment}
+\begin{eulerprompt}
+>f &= 5*x;
+>function f(x) := 6*x;
+>f(2)
+\end{eulerprompt}
+\begin{euleroutput}
+      12.0000 
+\end{euleroutput}
+\begin{eulercomment}
+Untuk memudahkan, ekspresi simbolik atau numerik harus diberi nama
+dengan fx, fxy, dsb. Skema penamaan ini harus tidak digunakan untuk
+fungsi.
+\end{eulercomment}
+\begin{eulerprompt}
+>fx &= diff(x^x,x); $&fx
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+x^{x}\,\left(\log x+1\right)
+\]
+\end{eulerformula}
+\begin{eulercomment}
+Bentuk khusus dari suatu ekspresi memungkinkan variabel manapun
+sebagai parameter tanpa nama untuk mengevaluasi ekspresi, tidak hanya
+"x" \textbackslash{}, "yy", dst. Untuk itu, mulailah sebuah ekspresi dengan
+"@(variables)...".
+\end{eulercomment}
+\begin{eulerprompt}
+>"@(a,b) a^2+b^2", %(4,5)
+\end{eulerprompt}
+\begin{euleroutput}
+  @(a,b) a^2+b^2
+      41.0000 
+\end{euleroutput}
+\begin{eulercomment}
+Hal ini memungkinkan untuk memanipulasi ekspresi pada variavel lain
+untuk fungsi EMT yang mana membutuhkan ekspresi di "x".
+
+Cara paling dasar untuk mendefinisikan suatu fungsi sederhana adalah
+dengan cara menyimpan formula dalam ekspresi simbolik atau numerik.
+Jika variabel utama adalah x, ekspresi dapat dievaluasi seperti halnya
+fungsi.
+
+Seperti yang terlihat pada contoh di bawah, variabel global dapat
+terlihat selama proses evaluasi.
+\end{eulercomment}
+\begin{eulerprompt}
+>fx &= x^3-a*x;  ...
+>a=1.2; fx(0.5)
+\end{eulerprompt}
+\begin{euleroutput}
+      -0.4750 
+\end{euleroutput}
+\begin{eulercomment}
+Semua variable lain dalam ekspresi dapat ditentukan dalam evaluasi
+menggunakan parameter yang ditetapkan.
+\end{eulercomment}
+\begin{eulerprompt}
+>fx(0.5,a=1.1)
+\end{eulerprompt}
+\begin{euleroutput}
+      -0.4250 
+\end{euleroutput}
+\begin{eulercomment}
+Suatu ekspresi tidak harus berbentuk simbolik. Hal ini diperlukan,
+jika ekspresi memuat fungsi, yang mana hanya dikenal di kernel
+numerik, bukan Maxim.
+
+\end{eulercomment}
+\eulersubheading{Soal Latihan Tambahan Ekspresi}
+\begin{eulerprompt}
+>b:=3; function f(expr,x,b) := expr(x);
+>f("b*x^2",4,6)
+\end{eulerprompt}
+\begin{euleroutput}
+      48.0000 
+\end{euleroutput}
+\begin{eulerprompt}
+>f &= x^3;
+>function f(x) := x^4;
+>f(2)
+\end{eulerprompt}
+\begin{euleroutput}
+      16.0000 
+\end{euleroutput}
+\begin{eulerprompt}
+>fx &= x^5-a^2;
+>a=7; f(3)
+\end{eulerprompt}
+\begin{euleroutput}
+      81.0000 
+\end{euleroutput}
+\begin{eulerudf}
+  
+\end{eulerudf}
+\eulerheading{Matematika Simbolik}
+\begin{eulercomment}
+EMT mengerjakan matematika simbolik dengan bantuan Maxima. Untuk lebih
+lengkap, mulai dengan tutorial berikut, atau search referensi untuk
+Maxima di internet. Expert di Maxima harus mengingat bahwa teedapat
+perbedaan pada sintaks, antara sintaks asli Maxima dan sintaks bawaan
+dari ekspresi simbolik di EMT.
+
+Matematika simbolik diintegrasikan dengan mulus ke dalam Euler dengan
+\&. Setiap ekspresi yang dimulai dengan \& adalah ekspresi simbolik.
+Ekspresi ini dievaluasi dan dicetak oleh Maxima.
+
+Pertama-tama, Maxima memiliki aritmatika "tak terbatas" yang dapat
+menangani angka yang sangat besar.
+\end{eulercomment}
+\begin{eulerprompt}
+>$&44!
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+2658271574788448768043625811014615890319638528000000000
+\]
+\end{eulerformula}
+\begin{eulercomment}
+Dengan ini, kalian dapat menghitung hasil yang besar secara tepat.
+Mari kita hitung.
+
+\end{eulercomment}
+\begin{eulerformula}
+\[
+C(44,10) = \frac{44!}{34! \cdot 10!}
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$& 44!/(34!*10!) // nilai C(44,10)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+2481256778
+\]
+\end{eulerformula}
+\begin{eulercomment}
+Tentu saja Maxima memiliki fungsi yang lebih efektif untuk masalah
+ini.
+\end{eulercomment}
+\begin{eulerprompt}
+>$binomial(44,10) //menghitung C(44,10) menggunakan fungsi binomial()
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+2481256778
+\]
+\end{eulerformula}
+\begin{eulercomment}
+Untuk belajar lebih mengenai fungsi spesifik, klik dua kali pada
+fungsi tersebut. 
+
+\end{eulercomment}
+\begin{eulerformula}
+\[
+C(x,3)=\frac{x!}{(x-3)!3!}=\frac{(x-2)(x-1)x}{6}
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$binomial(x,3) // C(x,3)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\frac{\left(x-2\right)\,\left(x-1\right)\,x}{6}
+\]
+\end{eulerformula}
+\begin{eulercomment}
+Jika kalian ingin mengganti x dengan nilai spesifik tertentu, gunakan
+"with:.
+\end{eulercomment}
+\begin{eulerprompt}
+>$&binomial(x,3) with x=10 // substitusi x=10 ke C(x,3)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+120
+\]
+\end{eulerformula}
+\begin{eulercomment}
+Dengan cara tersebut, kalian dapat menggunakan solusi dari persamaan
+dalam persamaan lain. 
+
+Ekspresi simbolik dicetak dengan Maxima pada bentuk 2D. Alasannya
+adalah karena adanya bendera simbolis khusus pada string.
+
+Seperti yang akan kalian lihat di contoh sebelum dan selanjutnya, jika
+kalian sudah menginstall LaTex, kalian dapat mencetak ekspresi
+simbolik dengan LaTex. Jika tidak, perintah selanjutnya akan error.
+
+Untuk mencetak ekspresi simbolik dengan LaTex, gunakan \textdollar{} di depan \&
+(atau kalian bisa abaikan \&) sebelum perintah. Jangan jalankan
+perintah Maxima dengan \textdollar{}, jika kalian belum meningtall LaTex.
+\end{eulercomment}
+\begin{eulerprompt}
+>$(3+x)/(x^2+1)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\frac{x+3}{x^2+1}
+\]
+\end{eulerformula}
+\begin{eulercomment}
+Ekspresi simbolik diuraikan oleh Euler. Jika kalian membutuhkan
+sintaks yang kompeks dalam satu ekspresi, kalian dapat mengapit
+ekspresi dengan "...". Menggunakan lebih dari satu ekspresi sederhana
+memungkinkan, tetapi sangat tidak disarankan.
+\end{eulercomment}
+\begin{eulerprompt}
+>&"v := 5; v^2"
+\end{eulerprompt}
+\begin{euleroutput}
+  
+                                    25
+  
+\end{euleroutput}
+\begin{eulercomment}
+Ekspresi simbolik diuraikan oleh Euler. Jika kalian membutuhkan
+kompleksitas untuk kelengkapan, kami menyatakan bahwa ekspresi
+simbolik dapat digunakan dalam program, tetapi harus diapit oleh tanda
+kutip. Selain itu, akan jauh lebih efektif untuk memanggil Maxima pada
+saat kompilasi jika memungkinkan.
+\end{eulercomment}
+\begin{eulerprompt}
+>$&expand((1+x)^4), $&factor(diff(%,x)) // diff: turunan, factor: faktor
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+4\,\left(x+1\right)^3
+\]
+\end{eulerformula}
+\eulerimg{0}{images/Icha Nur Oktaviani Hartono_23030630027_EMT4aljabar-024-large.png}
+\begin{eulercomment}
+Sekali lagi, \% merujuk pada hasil sebelumnya.
+
+Untuk membuatnya menjadi lebih mudah, kami menyimpan solusi untuk
+variabel simbolik. Variavel simbolik didefinisikan dengan "\&=".
+\end{eulercomment}
+\begin{eulerprompt}
+>fx &= (x+1)/(x^4+1); $&fx
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\frac{x+1}{x^4+1}
+\]
+\end{eulerformula}
+\begin{eulercomment}
+Ekspresi simbolik dapat digunakan dalam ekspresi simbolik lainnya.
+\end{eulercomment}
+\begin{eulerprompt}
+>$&factor(diff(fx,x))
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\frac{-3\,x^4-4\,x^3+1}{\left(x^4+1\right)^2}
+\]
+\end{eulerformula}
+\begin{eulercomment}
+Input langsnug dari perintah Maxima juga tersedia. Mulai dari baris
+perintah dengan "::". Sintaks Maxima disesuaikan dengan sintaks EMT
+(disebut "mode kompabilitas").
+\end{eulercomment}
+\begin{eulerprompt}
+>&factor(20!)
+\end{eulerprompt}
+\begin{euleroutput}
+  
+                           2432902008176640000
+  
+\end{euleroutput}
+\begin{eulerprompt}
+>::: factor(10!)
+\end{eulerprompt}
+\begin{euleroutput}
+  
+                                 8  4  2
+                                2  3  5  7
+  
+\end{euleroutput}
+\begin{eulerprompt}
+>:: factor(20!)
+\end{eulerprompt}
+\begin{euleroutput}
+  
+                          18  8  4  2
+                         2   3  5  7  11 13 17 19
+  
+\end{euleroutput}
+\begin{eulercomment}
+Jika kalian sudah mahir menggunakan Maxima, kalian mungkin ingin
+menggunakan sintaks asli Maxima. Kalian dapat melakukan ini dengan
+":::".
+\end{eulercomment}
+\begin{eulerprompt}
+>::: av:g$ av^2;
+\end{eulerprompt}
+\begin{euleroutput}
+  
+                                     2
+                                    g
+  
+\end{euleroutput}
+\begin{eulerprompt}
+>fx &= x^3*exp(x), $fx
+\end{eulerprompt}
+\begin{euleroutput}
+  
+                                   3  x
+                                  x  E
+  
+\end{euleroutput}
+\begin{eulerformula}
+\[
+x^3\,e^{x}
+\]
+\end{eulerformula}
+\begin{eulercomment}
+Variabel seperti itu dapat digunakan dalam ekspresi simbolik lain.
+Ingat bahwa pada perintah berikut ini, sisi kanan dari \&= dievaluasi
+sebelum penugasan ke Fx.
+\end{eulercomment}
+\begin{eulerprompt}
+>&(fx with x=5), $%, &float(%)
+\end{eulerprompt}
+\begin{euleroutput}
+  
+                                       5
+                                  125 E
+  
+\end{euleroutput}
+\begin{eulerformula}
+\[
+125\,e^5
+\]
+\end{eulerformula}
+\begin{euleroutput}
+  
+                            18551.64488782208
+  
+\end{euleroutput}
+\begin{eulerprompt}
+>fx(5)
+\end{eulerprompt}
+\begin{euleroutput}
+  18551.6448878
+\end{euleroutput}
+\begin{eulercomment}
+Untuk mengevaluasi ekspresi dengan nilai tertentu dari variabel,
+kalian dapat menggunakan operator "with" .
+
+Perintah berikut ini juga mendemostrasikan bahwa Maxima dapat
+mengecaluasi ekspresi numerik dengan float().
+\end{eulercomment}
+\begin{eulerprompt}
+>&(fx with x=10)-(fx with x=5), &float(%)
+\end{eulerprompt}
+\begin{euleroutput}
+  
+                                  10        5
+                            1000 E   - 125 E
+  
+  
+                           2.20079141499189e+7
+  
+\end{euleroutput}
+\begin{eulerprompt}
+>$factor(diff(fx,x,2))
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+x\,\left(x^2+6\,x+6\right)\,e^{x}
+\]
+\end{eulerformula}
+\begin{eulercomment}
+Untuk mendapatkan LaTex kode untuk ekspresi, kalian dapat menggunakan
+perintah tex.
+\end{eulercomment}
+\begin{eulerprompt}
+>tex(fx)
+\end{eulerprompt}
+\begin{euleroutput}
+  x^3\(\backslash\),e^\{x\}
+\end{euleroutput}
+\begin{eulercomment}
+Ekspresi simbolik dapat dievaluasikan sama seperti ekspresi numerik.
+\end{eulercomment}
+\begin{eulerprompt}
+>fx(0.5)
+\end{eulerprompt}
+\begin{euleroutput}
+  0.206090158838
+\end{euleroutput}
+\begin{eulercomment}
+Di ekspresi simbolik, hal ini tidak berlaku, karena Maxima tidak
+mensupportnya. Sebaliknya, gunakan sintaks "with" (bentuk yang lebih
+baik dari perintah at(...) Maxima).
+\end{eulercomment}
+\begin{eulerprompt}
+>$&fx with x=1/2
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\frac{\sqrt{e}}{8}
+\]
+\end{eulerformula}
+\begin{eulercomment}
+Penugasan juga dapat berupa simbolik.
+\end{eulercomment}
+\begin{eulerprompt}
+>$&fx with x=1+t
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\left(t+1\right)^3\,e^{t+1}
+\]
+\end{eulerformula}
+\begin{eulercomment}
+Perintah "solve" akan menyelesaikan ekspresi simbolik untuk variabel
+dalam Maxima. Hasilnya adalah solusi dalam bentuk vektor.
+\end{eulercomment}
+\begin{eulerprompt}
+>$&solve(x^2+x=4,x)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\left[ x=\frac{-\sqrt{17}-1}{2} , x=\frac{\sqrt{17}-1}{2} \right] 
+\]
+\end{eulerformula}
+\begin{eulercomment}
+Bandingkan dengan perintah numerik "solve" dalam Euler, yang
+membutuhkan nilai aawal, dan pilihan target tujuan.
+\end{eulercomment}
+\begin{eulerprompt}
+>solve("x^2+x",1,y=4)
+\end{eulerprompt}
+\begin{euleroutput}
+  1.56155281281
+\end{euleroutput}
+\begin{eulercomment}
+Nilai numerik dari solusi simbolik dapat dihitung dengan evaluasi
+hasil simbolik. Euler akan membaca penugasan x= dst. Jika kalian tidak
+membutuhkan hasil numerik untuk perhitungan lebih lanjut, kalian juga
+bisa membiarkan Maxima menemukan nilai numeriknya.
+\end{eulercomment}
+\begin{eulerprompt}
+>sol &= solve(x^2+2*x=4,x); $&sol, sol(), $&float(sol)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\left[ x=-\sqrt{5}-1 , x=\sqrt{5}-1 \right] 
+\]
+\end{eulerformula}
+\begin{euleroutput}
+  [-3.23607,  1.23607]
+\end{euleroutput}
+\begin{eulerformula}
+\[
+\left[ x=-3.23606797749979 , x=1.23606797749979 \right] 
+\]
+\end{eulerformula}
+\begin{eulercomment}
+Untuk mendapatkan solusi simbolik tertentu, dapat menggunakan "with"
+dan index.
+\end{eulercomment}
+\begin{eulerprompt}
+>$&solve(x^2+x=1,x), x2 &= x with %[2]; $&x2
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\frac{\sqrt{5}-1}{2}
+\]
+\end{eulerformula}
+\eulerimg{1}{images/Icha Nur Oktaviani Hartono_23030630027_EMT4aljabar-036-large.png}
+\begin{eulercomment}
+Untuk menyelesaikan sistem persamaan, gunakan persamaan vektor.
+Hasilnya adalah vektor solusi.
+\end{eulercomment}
+\begin{eulerprompt}
+>sol &= solve([x+y=3,x^2+y^2=5],[x,y]); $&sol, $&x*y with sol[1]
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+2
+\]
+\end{eulerformula}
+\eulerimg{0}{images/Icha Nur Oktaviani Hartono_23030630027_EMT4aljabar-038-large.png}
+\begin{eulercomment}
+Ekspresi simbolik dapat memiliki bendera, yang bermakna perlakuan
+khusus di Maxima. Bebebrapa bendera dapat digunakan sebagai perintah,
+yang lainnya tidak. Bendera ditambahkan dengan "\textbar{}" (bentuk yang lebih
+baik dari "ev(...,flags)").
+\end{eulercomment}
+\begin{eulerprompt}
+>$& diff((x^3-1)/(x+1),x) //turunan bentuk pecahan
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\frac{3\,x^2}{x+1}-\frac{x^3-1}{\left(x+1\right)^2}
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$& diff((x^3-1)/(x+1),x) | ratsimp //menyederhanakan pecahan
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\frac{2\,x^3+3\,x^2+1}{x^2+2\,x+1}
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&factor(%)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\frac{x+1}{x^4+1}
+\]
+\end{eulerformula}
+\eulersubheading{Soal Latihan Tambahan Matematika Simbolik}
+\begin{eulerprompt}
+>$& 35!/(12!*23!)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+834451800
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$binomial(35,12)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+834451800
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$binomial(x,8)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\frac{\left(x-7\right)\,\left(x-6\right)\,\left(x-5\right)\,\left(x  -4\right)\,\left(x-3\right)\,\left(x-2\right)\,\left(x-1\right)\,x}{  40320}
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$solve(x-7)/(2+x)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\left[ \frac{x}{x+2}=\frac{7}{x+2} \right] 
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&expand((a-b)^4)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+b^4-4\,a\,b^3+6\,a^2\,b^2-4\,a^3\,b+a^4
+\]
+\end{eulerformula}
+\eulerheading{Fungsi}
+\begin{eulercomment}
+Di EMT, fungsi adalah program yang didefinikan dengan perintah
+"function". Fungsi dapat berupa fungsi satu baris atau fungsi
+multibaris. Fungsi satu baris dapat berupa numerik atau simbolik.
+Fungsi satu baris numerik didefinisikan dengan ":=".
+\end{eulercomment}
+\begin{eulerprompt}
+>function f(x) := x*sqrt(x^2+1)
+\end{eulerprompt}
+\begin{eulercomment}
+Sebagai gambaran umum, kami menunjukkan semua definisi yang mungkin
+untuk fungsi satu baris. Sebuah fungsi dapat dievaluasi seperti halnya
+fungsi Euler bawaan.
+\end{eulercomment}
+\begin{eulerprompt}
+>f(2)
+\end{eulerprompt}
+\begin{euleroutput}
+  4.472135955
+\end{euleroutput}
+\begin{eulercomment}
+Fungsi ini juga dapat digunakan dalam vektor, sesuai dengan bahasa
+matriks Euler, karena ekspresi yang digunakan dalam fungsi ini adalah
+vektor.
+\end{eulercomment}
+\begin{eulerprompt}
+>f(0:0.1:1)
+\end{eulerprompt}
+\begin{euleroutput}
+  [0,  0.100499,  0.203961,  0.313209,  0.430813,  0.559017,  0.699714,
+  0.854459,  1.0245,  1.21083,  1.41421]
+\end{euleroutput}
+\begin{eulercomment}
+Fungsi dapat diplot. Alih-alih ekspresi, kita hanya perlu memberikan
+nama fungsi.
+
+
+Berbeda dengan ekspresi simbolik atau numerik, nama fungsi harus
+disediakan dalam bentuk string.
+\end{eulercomment}
+\begin{eulerprompt}
+>solve("f",1,y=1)
+\end{eulerprompt}
+\begin{euleroutput}
+  0.786151377757
+\end{euleroutput}
+\begin{eulercomment}
+Secara default, jika kalian perlu menimpa fungsi built-in, kalian
+harus menambahkan kata kunci “overwrite”. Menimpa fungsi bawaan
+berbahaya dan dapat menyebabkan masalah bagi fungsi lain yang
+bergantung pada fungsi tersebut.
+
+
+Kalian masih dapat memanggil fungsi bawaan sebagai “\_...”, jika fungsi
+tersebut merupakan fungsi dalam inti Euler.
+\end{eulercomment}
+\begin{eulerprompt}
+>function overwrite sin (x) := _sin(x°) // redine sine in degrees
+>sin(45)
+\end{eulerprompt}
+\begin{euleroutput}
+       0.7071 
+\end{euleroutput}
+\begin{eulercomment}
+Sebaiknya kita menghapus redefinisi dari sin.
+\end{eulercomment}
+\begin{eulerprompt}
+>forget sin; sin(pi/4)
+\end{eulerprompt}
+\begin{euleroutput}
+       0.7071 
+\end{euleroutput}
+\eulersubheading{Soal Latihan Tambahan Fungsi}
+\begin{eulerprompt}
+>function f(x) := sqrt(8*x^5*9*x)
+>f(3)
+\end{eulerprompt}
+\begin{euleroutput}
+     229.1026 
+\end{euleroutput}
+\begin{eulerprompt}
+>f(1:2:10)
+\end{eulerprompt}
+\begin{euleroutput}
+       8.4853    229.1026   1060.6602   2910.4515   6185.7701 
+\end{euleroutput}
+\eulersubheading{Default Parameter}
+\begin{eulercomment}
+Fungsi numerik dapat mempunyai default parameter.
+\end{eulercomment}
+\begin{eulerprompt}
+>function f(x,a=1) := a*x^2
+\end{eulerprompt}
+\begin{eulercomment}
+Menghilangkan parameter ini menggunakan nilai default.
+\end{eulercomment}
+\begin{eulerprompt}
+>f(4)
+\end{eulerprompt}
+\begin{euleroutput}
+  16
+\end{euleroutput}
+\begin{eulercomment}
+Menetapkannya akan menimpa nilai default.
+\end{eulercomment}
+\begin{eulerprompt}
+>f(4,5)
+\end{eulerprompt}
+\begin{euleroutput}
+  80
+\end{euleroutput}
+\begin{eulercomment}
+Parameter yang ditetapkan juga menimpanya. Ini digunakan oleh banyak
+fungsi Euler seperti plot2d, plot3d.
+\end{eulercomment}
+\begin{eulerprompt}
+>f(4,a=1)
+\end{eulerprompt}
+\begin{euleroutput}
+  16
+\end{euleroutput}
+\begin{eulercomment}
+Jika sebuah variabel bukan parameter, maka variabel tersebut harus
+bersifat global. Fungsi satu baris dapat melihat variabel global.
+\end{eulercomment}
+\begin{eulerprompt}
+>function f(x) := a*x^2
+>a=6; f(2)
+\end{eulerprompt}
+\begin{euleroutput}
+  24
+\end{euleroutput}
+\begin{eulercomment}
+Tetapi parameter yang ditetapkan akan menggantikan nilai global.
+
+
+Jika argumen tidak ada dalam daftar parameter yang telah ditentukan
+sebelumnya, argumen tersebut harus dideklarasikan dengan “:=”!
+\end{eulercomment}
+\begin{eulerprompt}
+>f(2,a:=5)
+\end{eulerprompt}
+\begin{euleroutput}
+  20
+\end{euleroutput}
+\begin{eulercomment}
+Fungsi simbolik didefinisikan dengan “\&=”. Fungsi-fungsi ini
+didefinisikan dalam Euler dan Maxima, dan dapat digunakan di kedua
+bahasa tersebut. Ekspresi pendefinisian dijalankan melalui Maxima
+sebelum definisi.
+\end{eulercomment}
+\begin{eulerprompt}
+>function g(x) &= x^3-x*exp(-x); $&g(x)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+x^3-x\,e^ {- x }
+\]
+\end{eulerformula}
+\begin{eulercomment}
+Fungsi simbolik dapat digunakan di epsresi simbolik
+\end{eulercomment}
+\begin{eulerprompt}
+>$&diff(g(x),x), $&% with x=4/3
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\frac{e^ {- \frac{4}{3} }}{3}+\frac{16}{3}
+\]
+\end{eulerformula}
+\eulerimg{1}{images/Icha Nur Oktaviani Hartono_23030630027_EMT4aljabar-049-large.png}
+\begin{eulercomment}
+Fungsi ini juga dapat digunakan dalam ekspresi numerik. Tentu saja,
+ini hanya akan berfungsi jika EMT dapat menginterpretasikan semua yang
+ada di dalam fungsi.
+\end{eulercomment}
+\begin{eulerprompt}
+>g(5+g(1))
+\end{eulerprompt}
+\begin{euleroutput}
+  178.635099908
+\end{euleroutput}
+\begin{eulercomment}
+Mereka dapat digunakan untuk mendefinisikan fungsi atau ekspresi
+simbolis lainnya.
+\end{eulercomment}
+\begin{eulerprompt}
+>function G(x) &= factor(integrate(g(x),x)); $&G(c) // integrate: mengintegralkan
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\frac{e^ {- c }\,\left(c^4\,e^{c}+4\,c+4\right)}{4}
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>solve(&g(x),0.5)
+\end{eulerprompt}
+\begin{euleroutput}
+  0.703467422498
+\end{euleroutput}
+\begin{eulercomment}
+Hal berikut ini juga dapat digunakan, karena Euler menggunakan
+ekspresi simbolik dalam fungsi g, jika tidak menemukan variabel
+simbolik g, dan jika ada fungsi simbolik g.
+\end{eulercomment}
+\begin{eulerprompt}
+>solve(&g,0.5)
+\end{eulerprompt}
+\begin{euleroutput}
+  0.703467422498
+\end{euleroutput}
+\begin{eulerprompt}
+>function P(x,n) &= (2*x-1)^n; $&P(x,n)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\left(2\,x-1\right)^{n}
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>function Q(x,n) &= (x+2)^n; $&Q(x,n)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\left(x+2\right)^{n}
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&P(x,4), $&expand(%)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+16\,x^4-32\,x^3+24\,x^2-8\,x+1
+\]
+\end{eulerformula}
+\eulerimg{0}{images/Icha Nur Oktaviani Hartono_23030630027_EMT4aljabar-054-large.png}
+\begin{eulerprompt}
+>P(3,4)
+\end{eulerprompt}
+\begin{euleroutput}
+  625
+\end{euleroutput}
+\begin{eulerprompt}
+>$&P(x,4)+ Q(x,3), $&expand(%)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+16\,x^4-31\,x^3+30\,x^2+4\,x+9
+\]
+\end{eulerformula}
+\eulerimg{0}{images/Icha Nur Oktaviani Hartono_23030630027_EMT4aljabar-056-large.png}
+\begin{eulerprompt}
+>$&P(x,4)-Q(x,3), $&expand(%), $&factor(%)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+P\left(x , 4\right)-Q\left(x , 3\right)
+\]
+\end{eulerformula}
+\eulerimg{0}{images/Icha Nur Oktaviani Hartono_23030630027_EMT4aljabar-058-large.png}
+\eulerimg{0}{images/Icha Nur Oktaviani Hartono_23030630027_EMT4aljabar-059-large.png}
+\begin{eulerprompt}
+>$&P(x,4)*Q(x,3), $&expand(%), $&factor(%)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+Q\left(x , 3\right)\,P\left(x , 4\right)
+\]
+\end{eulerformula}
+\eulerimg{0}{images/Icha Nur Oktaviani Hartono_23030630027_EMT4aljabar-061-large.png}
+\eulerimg{0}{images/Icha Nur Oktaviani Hartono_23030630027_EMT4aljabar-062-large.png}
+\begin{eulerprompt}
+>$&P(x,4)/Q(x,1), $&expand(%), $&factor(%)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\frac{P\left(x , 4\right)}{Q\left(x , 1\right)}
+\]
+\end{eulerformula}
+\eulerimg{1}{images/Icha Nur Oktaviani Hartono_23030630027_EMT4aljabar-064-large.png}
+\eulerimg{1}{images/Icha Nur Oktaviani Hartono_23030630027_EMT4aljabar-065-large.png}
+\begin{eulerprompt}
+>function f(x) &= x^3-x; $&f(x)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+x^3-x
+\]
+\end{eulerformula}
+\begin{eulercomment}
+dengan \&= fungsi ini bersifat simbolik, dan dapat digunakan dalam
+ekspresi simbolik lainnya.
+\end{eulercomment}
+\begin{eulerprompt}
+>$&integrate(f(x),x)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\frac{x^4}{4}-\frac{x^2}{2}
+\]
+\end{eulerformula}
+\begin{eulercomment}
+Dengan := fungsi tersebut berupa angka. Contoh yang baik adalah
+integral pasti seperti
+
+
+lateks: f(x) = \textbackslash{}int\_1\textasciicircum{}x t\textasciicircum{}t \textbackslash{}, dt,
+
+
+yang tidak dapat dievaluasi secara simbolik.
+
+
+Jika kita mendefinisikan ulang fungsi tersebut dengan kata kunci
+“map”, maka fungsi tersebut dapat digunakan untuk vektor x. Secara
+internal, fungsi tersebut dipanggil untuk semua nilai x satu kali, dan
+hasilnya disimpan dalam sebuah vektor.
+\end{eulercomment}
+\begin{eulerprompt}
+>function map f(x) := integrate("x^x",1,x)
+>f(0:0.5:2)
+\end{eulerprompt}
+\begin{euleroutput}
+  [-0.783431,  -0.410816,  0,  0.676863,  2.05045]
+\end{euleroutput}
+\begin{eulercomment}
+Fungsi dapat mempunyai nilai default untuk parameter.
+\end{eulercomment}
+\begin{eulerprompt}
+>function mylog (x,base=10) := ln(x)/ln(base);
+\end{eulerprompt}
+\begin{eulercomment}
+Sekarang, fungsi tersebut dapat dipanggil dengan atau tanpa parameter
+"base".
+\end{eulercomment}
+\begin{eulerprompt}
+>mylog(100), mylog(2^6.7,2)
+\end{eulerprompt}
+\begin{euleroutput}
+  2
+  6.7
+\end{euleroutput}
+\begin{eulercomment}
+Selain itu, dimungkingkan untuk menggunakan parameter yang ditetapkan.
+\end{eulercomment}
+\begin{eulerprompt}
+>mylog(E^2,base=E)
+\end{eulerprompt}
+\begin{euleroutput}
+  2
+\end{euleroutput}
+\begin{eulercomment}
+Sering kali, kita ingin menggunakan fungsi untuk vektor di satu
+tempat, dan untuk masing-masing elemen di tempat lain. Hal ini
+dimungkinkan dengan parameter vektor.
+\end{eulercomment}
+\begin{eulerprompt}
+>function f([a,b]) &= a^2+b^2-a*b+b; $&f(a,b), $&f(x,y)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+y^2-x\,y+y+x^2
+\]
+\end{eulerformula}
+\eulerimg{0}{images/Icha Nur Oktaviani Hartono_23030630027_EMT4aljabar-069-large.png}
+\begin{eulercomment}
+Fungsi simbolik seperti itu dapat digunakan untuk variabel simbolik.
+
+
+Tetapi fungsi ini juga dapat digunakan untuk vektor numerik.
+\end{eulercomment}
+\begin{eulerprompt}
+>v=[3,4]; f(v)
+\end{eulerprompt}
+\begin{euleroutput}
+  17
+\end{euleroutput}
+\begin{eulercomment}
+Ada juga fungsi yang murni simbolis, yang tidak dapat digunakan secara
+numerik.
+\end{eulercomment}
+\begin{eulerprompt}
+>function lapl(expr,x,y) &&= diff(expr,x,2)+diff(expr,y,2)//turunan parsial kedua
+\end{eulerprompt}
+\begin{euleroutput}
+  
+                   diff(expr, y, 2) + diff(expr, x, 2)
+  
+\end{euleroutput}
+\begin{eulerprompt}
+>$&realpart((x+I*y)^4), $&lapl(%,x,y)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+{\it lapl}\left(y^4-6\,x^2\,y^2+x^4 , x , y\right)
+\]
+\end{eulerformula}
+\eulerimg{0}{images/Icha Nur Oktaviani Hartono_23030630027_EMT4aljabar-071-large.png}
+\begin{eulercomment}
+Tetapi tentu saja, semua itu bisa digunakan dalam ekspresi simbolis
+atau dalam definisi fungsi simbolis.
+\end{eulercomment}
+\begin{eulerprompt}
+>function f(x,y) &= factor(lapl((x+y^2)^5,x,y)); $&f(x,y)
+\end{eulerprompt}
+\begin{eulercomment}
+Untuk meringkas
+
+- \&= mendefinisikan fungsi simbolik,
+
+\end{eulercomment}
+\begin{eulerttcomment}
+ := mendefinisikan fungsi numerik,
+\end{eulerttcomment}
+\begin{eulercomment}
+
+\end{eulercomment}
+\begin{eulerttcomment}
+ &&= mendefinisikan fungsi simbolik murni.
+\end{eulerttcomment}
+\begin{eulercomment}
+
+\end{eulercomment}
+\eulersubheading{Soal Latihan Tambahan Deafult Parameter}
+\begin{eulerprompt}
+>function f(x,a=5) := x^(-1/3)*2*a
+>f(3)
+\end{eulerprompt}
+\begin{euleroutput}
+       6.9336 
+\end{euleroutput}
+\begin{eulerprompt}
+>f(3,2)
+\end{eulerprompt}
+\begin{euleroutput}
+       2.7734 
+\end{euleroutput}
+\begin{eulerprompt}
+>function a(x) &= (2*x^7)+3*exp(-x); $&a(x)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+3\,e^ {- x }+2\,x^7
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&diff(a(x),x), $&% with x=1/3
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\frac{14}{729}-3\,e^ {- \frac{1}{3} }
+\]
+\end{eulerformula}
+\eulerimg{1}{images/Icha Nur Oktaviani Hartono_23030630027_EMT4aljabar-074-large.png}
+\begin{eulerprompt}
+>function A(x) &= diff(a(x),x); $&A(c)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+14\,c^6-3\,e^ {- c }
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>solve(&a(x),0.3)
+\end{eulerprompt}
+\begin{euleroutput}
+      -1.0911 
+\end{euleroutput}
+\eulerheading{Memecahkan Ekspresi}
+\begin{eulercomment}
+Ekspresi dapat diselesaikan secara numerik dan simbolik.
+
+
+Untuk menyelesaikan ekspresi sederhana dari satu variabel, kita dapat
+menggunakan fungsi solve(). Fungsi ini membutuhkan nilai awal untuk
+memulai pencarian. Secara internal, solve() menggunakan metode secant.
+\end{eulercomment}
+\begin{eulerprompt}
+>solve("x^2-2",1)
+\end{eulerprompt}
+\begin{euleroutput}
+  1.41421356237
+\end{euleroutput}
+\begin{eulercomment}
+Hal ini juga bekerja untuk ekspresi simbolik. Perhatikan fungsi
+berikut.
+\end{eulercomment}
+\begin{eulerprompt}
+>$&solve(x^2=2,x)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\left[ x=-\sqrt{2} , x=\sqrt{2} \right] 
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&solve(x^2-2,x)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\left[ x=-\sqrt{2} , x=\sqrt{2} \right] 
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&solve(a*x^2+b*x+c=0,x)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\left[ x=\frac{-\sqrt{b^2-4\,a\,c}-b}{2\,a} , x=\frac{\sqrt{b^2-4\,  a\,c}-b}{2\,a} \right] 
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&solve([a*x+b*y=c,d*x+e*y=f],[x,y])
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\left[ \left[ x=\left(-\frac{\sqrt{3}\,i}{2}-\frac{1}{2}\right)\,  \left(\frac{\sqrt{\frac{4\,a^3\,e^3+\left(27\,b\,c^2-12\,a^2\,b\,d  \right)\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}{b}}}{2\,3^{\frac{3}{2}}  \,b}+\frac{c\,e}{2\,b}\right)^{\frac{1}{3}}-\frac{\left(\frac{\sqrt{  3}\,i}{2}-\frac{1}{2}\right)\,\left(a\,e-b\,d\right)}{3\,b\,\left(  \frac{\sqrt{\frac{4\,a^3\,e^3+\left(27\,b\,c^2-12\,a^2\,b\,d\right)  \,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}{b}}}{2\,3^{\frac{3}{2}}\,b}+  \frac{c\,e}{2\,b}\right)^{\frac{1}{3}}} , y=\frac{e\,\left(a\,\sqrt{  b}\,c\,\left(3^{\frac{5}{2}}\,i\,\left(\sqrt{4\,a^3\,e^3-12\,a^2\,b  \,d\,e^2+27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}+3^{\frac{3  }{2}}\,\sqrt{b}\,c\,e\right)^{\frac{2}{3}}+9\,\left(\sqrt{4\,a^3\,e^  3-12\,a^2\,b\,d\,e^2+27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}  +3^{\frac{3}{2}}\,\sqrt{b}\,c\,e\right)^{\frac{2}{3}}\right)+2^{  \frac{4}{3}}\,3^{\frac{5}{2}}\,b\,c^2\,\left(\sqrt{4\,a^3\,e^3-12\,a  ^2\,b\,d\,e^2+27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}+3^{  \frac{3}{2}}\,\sqrt{b}\,c\,e\right)^{\frac{1}{3}}+a^2\,\left(3\,2^{  \frac{2}{3}}\,i\,\sqrt{4\,a^3\,e^3-12\,a^2\,b\,d\,e^2+27\,b\,c^2\,e^  2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}-2^{\frac{2}{3}}\,\sqrt{3}\,\sqrt{4  \,a^3\,e^3-12\,a^2\,b\,d\,e^2+27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,  b^3\,d^3}\right)+\left(9\,2^{\frac{2}{3}}-2^{\frac{2}{3}}\,3^{\frac{  5}{2}}\,i\right)\,a\,b^{\frac{3}{2}}\,c\,d\right)+a\,\left(3\,i\,  \sqrt{4\,a^3\,e^3-12\,a^2\,b\,d\,e^2+27\,b\,c^2\,e^2+12\,a\,b^2\,d^2  \,e-4\,b^3\,d^3}\,\left(\sqrt{4\,a^3\,e^3-12\,a^2\,b\,d\,e^2+27\,b\,  c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}+3^{\frac{3}{2}}\,\sqrt{b}\,  c\,e\right)^{\frac{2}{3}}+\sqrt{3}\,\sqrt{4\,a^3\,e^3-12\,a^2\,b\,d  \,e^2+27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}\,\left(\sqrt{4  \,a^3\,e^3-12\,a^2\,b\,d\,e^2+27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,  b^3\,d^3}+3^{\frac{3}{2}}\,\sqrt{b}\,c\,e\right)^{\frac{2}{3}}  \right)+3\,2^{\frac{4}{3}}\,\sqrt{b}\,c\,\sqrt{4\,a^3\,e^3-12\,a^2\,  b\,d\,e^2+27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}\,\left(  \sqrt{4\,a^3\,e^3-12\,a^2\,b\,d\,e^2+27\,b\,c^2\,e^2+12\,a\,b^2\,d^2  \,e-4\,b^3\,d^3}+3^{\frac{3}{2}}\,\sqrt{b}\,c\,e\right)^{\frac{1}{3}  }+a\,b\,d\,\left(2^{\frac{2}{3}}\,\sqrt{3}\,\sqrt{4\,a^3\,e^3-12\,a^  2\,b\,d\,e^2+27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}-3\,2^{  \frac{2}{3}}\,i\,\sqrt{4\,a^3\,e^3-12\,a^2\,b\,d\,e^2+27\,b\,c^2\,e^  2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}\right)+\left(2^{\frac{2}{3}}\,3^{  \frac{5}{2}}\,i-9\,2^{\frac{2}{3}}\right)\,a^2\,\sqrt{b}\,c\,e^2}{3  \,2^{\frac{4}{3}}\,b^{\frac{3}{2}}\,\sqrt{4\,a^3\,e^3-12\,a^2\,b\,d  \,e^2+27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}\,\left(\sqrt{4  \,a^3\,e^3-12\,a^2\,b\,d\,e^2+27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,  b^3\,d^3}+3^{\frac{3}{2}}\,\sqrt{b}\,c\,e\right)^{\frac{1}{3}}+2^{  \frac{4}{3}}\,3^{\frac{5}{2}}\,b^2\,c\,e\,\left(\sqrt{4\,a^3\,e^3-12  \,a^2\,b\,d\,e^2+27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}+3^{  \frac{3}{2}}\,\sqrt{b}\,c\,e\right)^{\frac{1}{3}}} \right]  ,   \left[ x=\left(\frac{\sqrt{3}\,i}{2}-\frac{1}{2}\right)\,\left(  \frac{\sqrt{\frac{4\,a^3\,e^3+\left(27\,b\,c^2-12\,a^2\,b\,d\right)  \,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}{b}}}{2\,3^{\frac{3}{2}}\,b}+  \frac{c\,e}{2\,b}\right)^{\frac{1}{3}}-\frac{\left(-\frac{\sqrt{3}\,  i}{2}-\frac{1}{2}\right)\,\left(a\,e-b\,d\right)}{3\,b\,\left(\frac{  \sqrt{\frac{4\,a^3\,e^3+\left(27\,b\,c^2-12\,a^2\,b\,d\right)\,e^2+  12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}{b}}}{2\,3^{\frac{3}{2}}\,b}+\frac{c  \,e}{2\,b}\right)^{\frac{1}{3}}} , y=\frac{-e\,\left(a\,\sqrt{b}\,c  \,\left(3^{\frac{5}{2}}\,i\,\left(\sqrt{4\,a^3\,e^3-12\,a^2\,b\,d\,e  ^2+27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}+3^{\frac{3}{2}}\,  \sqrt{b}\,c\,e\right)^{\frac{2}{3}}-9\,\left(\sqrt{4\,a^3\,e^3-12\,a  ^2\,b\,d\,e^2+27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}+3^{  \frac{3}{2}}\,\sqrt{b}\,c\,e\right)^{\frac{2}{3}}\right)-2^{\frac{4  }{3}}\,3^{\frac{5}{2}}\,b\,c^2\,\left(\sqrt{4\,a^3\,e^3-12\,a^2\,b\,  d\,e^2+27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}+3^{\frac{3}{2  }}\,\sqrt{b}\,c\,e\right)^{\frac{1}{3}}+a^2\,\left(3\,2^{\frac{2}{3}  }\,i\,\sqrt{4\,a^3\,e^3-12\,a^2\,b\,d\,e^2+27\,b\,c^2\,e^2+12\,a\,b^  2\,d^2\,e-4\,b^3\,d^3}+2^{\frac{2}{3}}\,\sqrt{3}\,\sqrt{4\,a^3\,e^3-  12\,a^2\,b\,d\,e^2+27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}  \right)+\left(-2^{\frac{2}{3}}\,3^{\frac{5}{2}}\,i-9\,2^{\frac{2}{3}  }\right)\,a\,b^{\frac{3}{2}}\,c\,d\right)-a\,\left(3\,i\,\sqrt{4\,a^  3\,e^3-12\,a^2\,b\,d\,e^2+27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3  \,d^3}\,\left(\sqrt{4\,a^3\,e^3-12\,a^2\,b\,d\,e^2+27\,b\,c^2\,e^2+  12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}+3^{\frac{3}{2}}\,\sqrt{b}\,c\,e  \right)^{\frac{2}{3}}-\sqrt{3}\,\sqrt{4\,a^3\,e^3-12\,a^2\,b\,d\,e^2  +27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}\,\left(\sqrt{4\,a^3  \,e^3-12\,a^2\,b\,d\,e^2+27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,  d^3}+3^{\frac{3}{2}}\,\sqrt{b}\,c\,e\right)^{\frac{2}{3}}\right)+3\,  2^{\frac{4}{3}}\,\sqrt{b}\,c\,\sqrt{4\,a^3\,e^3-12\,a^2\,b\,d\,e^2+  27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}\,\left(\sqrt{4\,a^3  \,e^3-12\,a^2\,b\,d\,e^2+27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,  d^3}+3^{\frac{3}{2}}\,\sqrt{b}\,c\,e\right)^{\frac{1}{3}}-a\,b\,d\,  \left(-3\,2^{\frac{2}{3}}\,i\,\sqrt{4\,a^3\,e^3-12\,a^2\,b\,d\,e^2+  27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}-2^{\frac{2}{3}}\,  \sqrt{3}\,\sqrt{4\,a^3\,e^3-12\,a^2\,b\,d\,e^2+27\,b\,c^2\,e^2+12\,a  \,b^2\,d^2\,e-4\,b^3\,d^3}\right)-\left(2^{\frac{2}{3}}\,3^{\frac{5  }{2}}\,i+9\,2^{\frac{2}{3}}\right)\,a^2\,\sqrt{b}\,c\,e^2}{3\,2^{  \frac{4}{3}}\,b^{\frac{3}{2}}\,\sqrt{4\,a^3\,e^3-12\,a^2\,b\,d\,e^2+  27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}\,\left(\sqrt{4\,a^3  \,e^3-12\,a^2\,b\,d\,e^2+27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,  d^3}+3^{\frac{3}{2}}\,\sqrt{b}\,c\,e\right)^{\frac{1}{3}}+2^{\frac{4  }{3}}\,3^{\frac{5}{2}}\,b^2\,c\,e\,\left(\sqrt{4\,a^3\,e^3-12\,a^2\,  b\,d\,e^2+27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}+3^{\frac{3  }{2}}\,\sqrt{b}\,c\,e\right)^{\frac{1}{3}}} \right]  , \left[ x=  \left(\frac{\sqrt{\frac{4\,a^3\,e^3+\left(27\,b\,c^2-12\,a^2\,b\,d  \right)\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}{b}}}{2\,3^{\frac{3}{2}}  \,b}+\frac{c\,e}{2\,b}\right)^{\frac{1}{3}}-\frac{a\,e-b\,d}{3\,b\,  \left(\frac{\sqrt{\frac{4\,a^3\,e^3+\left(27\,b\,c^2-12\,a^2\,b\,d  \right)\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}{b}}}{2\,3^{\frac{3}{2}}  \,b}+\frac{c\,e}{2\,b}\right)^{\frac{1}{3}}} , y=\frac{e\,\left(-9\,  a\,\sqrt{b}\,c\,\left(\sqrt{4\,a^3\,e^3-12\,a^2\,b\,d\,e^2+27\,b\,c^  2\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}+3^{\frac{3}{2}}\,\sqrt{b}\,c  \,e\right)^{\frac{2}{3}}+2^{\frac{1}{3}}\,3^{\frac{5}{2}}\,b\,c^2\,  \left(\sqrt{4\,a^3\,e^3-12\,a^2\,b\,d\,e^2+27\,b\,c^2\,e^2+12\,a\,b^  2\,d^2\,e-4\,b^3\,d^3}+3^{\frac{3}{2}}\,\sqrt{b}\,c\,e\right)^{  \frac{1}{3}}+2^{\frac{2}{3}}\,\sqrt{3}\,a^2\,\sqrt{4\,a^3\,e^3-12\,a  ^2\,b\,d\,e^2+27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}-9\,2^{  \frac{2}{3}}\,a\,b^{\frac{3}{2}}\,c\,d\right)-\sqrt{3}\,a\,\sqrt{4\,  a^3\,e^3-12\,a^2\,b\,d\,e^2+27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,b^  3\,d^3}\,\left(\sqrt{4\,a^3\,e^3-12\,a^2\,b\,d\,e^2+27\,b\,c^2\,e^2+  12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}+3^{\frac{3}{2}}\,\sqrt{b}\,c\,e  \right)^{\frac{2}{3}}+3\,2^{\frac{1}{3}}\,\sqrt{b}\,c\,\sqrt{4\,a^3  \,e^3-12\,a^2\,b\,d\,e^2+27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,  d^3}\,\left(\sqrt{4\,a^3\,e^3-12\,a^2\,b\,d\,e^2+27\,b\,c^2\,e^2+12  \,a\,b^2\,d^2\,e-4\,b^3\,d^3}+3^{\frac{3}{2}}\,\sqrt{b}\,c\,e\right)  ^{\frac{1}{3}}-2^{\frac{2}{3}}\,\sqrt{3}\,a\,b\,d\,\sqrt{4\,a^3\,e^3  -12\,a^2\,b\,d\,e^2+27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}+  9\,2^{\frac{2}{3}}\,a^2\,\sqrt{b}\,c\,e^2}{3\,2^{\frac{1}{3}}\,b^{  \frac{3}{2}}\,\sqrt{4\,a^3\,e^3-12\,a^2\,b\,d\,e^2+27\,b\,c^2\,e^2+  12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}\,\left(\sqrt{4\,a^3\,e^3-12\,a^2\,b  \,d\,e^2+27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}+3^{\frac{3  }{2}}\,\sqrt{b}\,c\,e\right)^{\frac{1}{3}}+2^{\frac{1}{3}}\,3^{  \frac{5}{2}}\,b^2\,c\,e\,\left(\sqrt{4\,a^3\,e^3-12\,a^2\,b\,d\,e^2+  27\,b\,c^2\,e^2+12\,a\,b^2\,d^2\,e-4\,b^3\,d^3}+3^{\frac{3}{2}}\,  \sqrt{b}\,c\,e\right)^{\frac{1}{3}}} \right]  \right] 
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>px &= 4*x^8+x^7-x^4-x; $&px
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+4\,x^8+x^7-x^4-x
+\]
+\end{eulerformula}
+\begin{eulercomment}
+Sekarang kita mencari titik, di mana polinomialnya adalah 2. Dalam
+solve(), nilai target default y=0 dapat diubah dengan variabel yang
+ditetapkan.
+
+Kami menggunakan y=2 dan mengeceknya dengan mengevaluasi polinomial
+pada hasil sebelumnya.
+\end{eulercomment}
+\begin{eulerprompt}
+>solve(px,1,y=2), px(%)
+\end{eulerprompt}
+\begin{euleroutput}
+  0.966715594851
+  2
+\end{euleroutput}
+\begin{eulercomment}
+Memecahkan sebuah ekspresi simbolik dalam bentuk simbolik
+mengembalikan sebuah daftar solusi. Kami menggunakan pemecah simbolik
+solve() yang disediakan oleh Maxima.
+\end{eulercomment}
+\begin{eulerprompt}
+>sol &= solve(x^2-x-1,x); $&sol
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\left[ x=\frac{1-\sqrt{5}}{2} , x=\frac{\sqrt{5}+1}{2} \right] 
+\]
+\end{eulerformula}
+\begin{eulercomment}
+Cara termudah untuk mendapatkan nilai numerik adalah dengan
+mengevaluasi solusi secara numerik seperti sebuah ekspresi.
+\end{eulercomment}
+\begin{eulerprompt}
+>longest sol()
+\end{eulerprompt}
+\begin{euleroutput}
+      -0.6180339887498949       1.618033988749895 
+\end{euleroutput}
+\begin{eulercomment}
+Untuk menggunakan solusi secara simbolis di ekspresi yang lain, cara
+termudah adalah dengan "with".
+\end{eulercomment}
+\begin{eulerprompt}
+>$&x^2 with sol[1], $&expand(x^2-x-1 with sol[2])
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+0
+\]
+\end{eulerformula}
+\eulerimg{0}{images/Icha Nur Oktaviani Hartono_23030630027_EMT4aljabar-083-large.png}
+\begin{eulercomment}
+Menyelesaikan sistem persamaan secara simbolik dapat dilakukan dengan
+vektor persamaan dan pemecah simbolik solve(). Jawabannya adalah
+sebuah daftar daftar persamaan.
+\end{eulercomment}
+\begin{eulerprompt}
+>$&solve([x+y=2,x^3+2*y+x=4],[x,y])
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\left[ \left[ x=-1 , y=3 \right]  , \left[ x=1 , y=1 \right]  ,   \left[ x=0 , y=2 \right]  \right] 
+\]
+\end{eulerformula}
+\begin{eulercomment}
+Fungsi f() dapat melihat variabel global. Akan tetapi, seringkali kita
+ingin menggunakan parameter lokal.
+
+\end{eulercomment}
+\begin{eulerformula}
+\[
+a^x-x^a = 0.1
+\]
+\end{eulerformula}
+\begin{eulercomment}
+dengan a=3.
+\end{eulercomment}
+\begin{eulerprompt}
+>function f(x,a) := x^a-a^x;
+\end{eulerprompt}
+\begin{eulercomment}
+Salah satu cara untuk mengoper parameter tambahan ke f() adalah dengan
+menggunakan sebuah daftar yang berisi nama fungsi dan parameternya
+(cara lainnya adalah dengan menggunakan parameter titik koma).
+\end{eulercomment}
+\begin{eulerprompt}
+>solve(\{\{"f",3\}\},2,y=0.1)
+\end{eulerprompt}
+\begin{euleroutput}
+  2.54116291558
+\end{euleroutput}
+\begin{eulercomment}
+Hal ini juga dapat dilakukan dengan ekspresi. Namun, elemen daftar
+bernama harus digunakan. (Lebih lanjut tentang daftar dalam tutorial
+sintaks EMT).
+\end{eulercomment}
+\begin{eulerprompt}
+>solve(\{\{"x^a-a^x",a=3\}\},2,y=0.1)
+\end{eulerprompt}
+\begin{euleroutput}
+       2.5412 
+\end{euleroutput}
+\eulersubheading{Soal Latihan Tambahan Memecahkan Ekspresi}
+\begin{eulerprompt}
+>px &= solve((y-2)*(y+2)*(y^2+4),y); $&px
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\left[ y=-2\,i , y=2\,i , y=-2 , y=2 \right] 
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>ax &= (2*x-7)*(2*x+7); $&ax
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\left(2\,x-7\right)\,\left(2\,x+7\right)
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>solve(ax,1,y=3), ax(%)
+\end{eulerprompt}
+\begin{euleroutput}
+       3.6056 
+       3.0000 
+\end{euleroutput}
+\eulerheading{Menyelesaikan Pertidaksamaan}
+\begin{eulercomment}
+Untuk menyelesaikan pertidaksamaan, EMT tidak akan dapat melakukannya,
+melainkan dengan bantuan Maxima, artinya secara eksak (simbolik).
+Perintah Maxima yang digunakan adalah fourier\_elim(), yang harus
+dipanggil dengan perintah "load(fourier\_elim)" terlebih dahulu.
+\end{eulercomment}
+\begin{eulerprompt}
+>&load(fourier_elim)
+\end{eulerprompt}
+\begin{euleroutput}
+  
+          C:/Aplikasi Komputer/Euler x64/maxima/share/maxima/5.35.1/sha\(\backslash\)
+  re/fourier_elim/fourier_elim.lisp
+  
+\end{euleroutput}
+\begin{eulerprompt}
+>$&fourier_elim([x^2 - 1>0],[x]) // x^2-1 > 0
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+{\it fourier\_\_elim}\left(\left[ x^2-1>0 \right]  , \left[ x   \right] \right)
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&fourier_elim([x^2 - 1<0],[x]) // x^2-1 < 0
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+{\it fourier\_\_elim}\left(\left[ x^2-1<0 \right]  , \left[ x   \right] \right)
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&fourier_elim([x^2 - 1 # 0],[x]) // x^-1 <> 0
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+{\it fourier\_\_elim}\left(\left[ x^2-1\neq 0 \right]  , \left[ x   \right] \right)
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&fourier_elim([x # 6],[x])
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+{\it fourier\_\_elim}\left(\left[ x\neq 6 \right]  , \left[ x   \right] \right)
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&fourier_elim([x < 1, x > 1],[x]) // tidak memiliki penyelesaian
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+{\it fourier\_\_elim}\left(\left[ x<1 , x>1 \right]  , \left[ x   \right] \right)
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&fourier_elim([minf < x, x < inf],[x]) // solusinya R
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+{\it fourier\_\_elim}\left(\left[  -\infty <x , x<\infty  \right]    , \left[ x \right] \right)
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&fourier_elim([x^3 - 1 > 0],[x])
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+{\it fourier\_\_elim}\left(\left[ x^3-1>0 \right]  , \left[ x   \right] \right)
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&fourier_elim([cos(x) < 1/2],[x]) // ??? gagal
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+{\it fourier\_\_elim}\left(\left[ \cos x<\frac{1}{2} \right]  ,   \left[ x \right] \right)
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&fourier_elim([y-x < 5, x - y < 7, 10 < y],[x,y]) // sistem pertidaksamaan
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+{\it fourier\_\_elim}\left(\left[ y-x<5 , x-y<7 , 10<y \right]  ,   \left[ x , y \right] \right)
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&fourier_elim([y-x < 5, x - y < 7, 10 < y],[y,x])
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\left[ {\it max}\left(10 , x-7\right)<y , y<x+5 , 5<x \right] 
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&fourier_elim((x + y < 5) and (x - y >8),[x,y])
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\left[ y+8<x , x<5-y , y<-\frac{3}{2} \right] 
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&fourier_elim(((x + y < 5) and x < 1) or  (x - y >8),[x,y])
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\left[ y+8<x \right] \lor \left[ x<{\it min}\left(1 , 5-y\right)   \right] 
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>&fourier_elim([max(x,y) > 6, x # 8, abs(y-1) > 12],[x,y])
+\end{eulerprompt}
+\begin{euleroutput}
+  
+          [6 < x, x < 8, y < - 11] or [8 < x, y < - 11]
+   or [x < 8, 13 < y] or [x = y, 13 < y] or [8 < x, x < y, 13 < y]
+   or [y < x, 13 < y]
+  
+\end{euleroutput}
+\begin{eulerprompt}
+>$&fourier_elim([(x+6)/(x-9) <= 6],[x])
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\left[ x=12 \right] \lor \left[ 12<x \right] \lor \left[ x<9   \right] 
+\]
+\end{eulerformula}
+\eulersubheading{Soal Latihan Tambahan Menyelesaikan Pertidaksamaan}
+\begin{eulerprompt}
+>&load(fourier_elim)
+\end{eulerprompt}
+\begin{euleroutput}
+  
+          C:/Aplikasi Komputer/Euler x64/maxima/share/maxima/5.35.1/sha\(\backslash\)
+  re/fourier_elim/fourier_elim.lisp
+  
+\end{euleroutput}
+\begin{eulerprompt}
+>$&fourier_elim([2*y-3>=1-y+5],[y])
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\left[ y=3 \right] \lor \left[ 3<y \right] 
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&fourier_elim([x^2+x-2>0],[x])
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\left[ 1<x \right] \lor \left[ x<-2 \right] 
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&fourier_elim([0.1*x^3-0.6*x^2-0.1*x+2<0],[x])
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+{\it fourier\_\_elim}\left(\left[ 0.1\,x^3-0.6\,x^2-0.1\,x+2<0   \right]  , \left[ x \right] \right)
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&fourier_elim([(x+6)/(x-2)>(x-8)/(x-5)],[x])
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\left[ 5<x \right] \lor \left[ 2<x , x<\frac{46}{11} \right] 
+\]
+\end{eulerformula}
+\eulerheading{Bahasa Matriks}
+\begin{eulercomment}
+Dokumentasi inti EMT berisi diskusi terperinci tentang bahasa matriks
+Euler.
+
+
+Vektor dan matriks dimasukkan dengan tanda kurung siku, elemen
+dipisahkan dengan koma, baris dipisahkan dengan titik koma.
+\end{eulercomment}
+\begin{eulerprompt}
+>A=[1,2;3,4]
+\end{eulerprompt}
+\begin{euleroutput}
+              1             2 
+              3             4 
+\end{euleroutput}
+\begin{eulercomment}
+Matriks produk atau hasil kali matriks dilambangkan dengan sebuah
+titik.
+\end{eulercomment}
+\begin{eulerprompt}
+>b=[3;4]
+\end{eulerprompt}
+\begin{euleroutput}
+              3 
+              4 
+\end{euleroutput}
+\begin{eulerprompt}
+>b' // transpose b
+\end{eulerprompt}
+\begin{euleroutput}
+  [3,  4]
+\end{euleroutput}
+\begin{eulerprompt}
+>inv(A) //inverse A
+\end{eulerprompt}
+\begin{euleroutput}
+             -2             1 
+            1.5          -0.5 
+\end{euleroutput}
+\begin{eulerprompt}
+>A.b //perkalian matriks
+\end{eulerprompt}
+\begin{euleroutput}
+             11 
+             25 
+\end{euleroutput}
+\begin{eulerprompt}
+>A.inv(A)
+\end{eulerprompt}
+\begin{euleroutput}
+              1             0 
+              0             1 
+\end{euleroutput}
+\begin{eulercomment}
+Poin terpenting dalam bahasa matriks adalah semua fungsi dan operator
+bekerja atau berlaku untuk setiap elemen.
+\end{eulercomment}
+\begin{eulerprompt}
+>A.A
+\end{eulerprompt}
+\begin{euleroutput}
+              7            10 
+             15            22 
+\end{euleroutput}
+\begin{eulerprompt}
+>A^2 //perpangkatan elemen2 A
+\end{eulerprompt}
+\begin{euleroutput}
+              1             4 
+              9            16 
+\end{euleroutput}
+\begin{eulerprompt}
+>A.A.A
+\end{eulerprompt}
+\begin{euleroutput}
+             37            54 
+             81           118 
+\end{euleroutput}
+\begin{eulerprompt}
+>power(A,3) //perpangkatan matriks
+\end{eulerprompt}
+\begin{euleroutput}
+             37            54 
+             81           118 
+\end{euleroutput}
+\begin{eulerprompt}
+>A/A //pembagian elemen-elemen matriks yang seletak
+\end{eulerprompt}
+\begin{euleroutput}
+              1             1 
+              1             1 
+\end{euleroutput}
+\begin{eulerprompt}
+>A/b //pembagian elemen2 A oleh elemen2 b kolom demi kolom (karena b vektor kolom)
+\end{eulerprompt}
+\begin{euleroutput}
+       0.333333      0.666667 
+           0.75             1 
+\end{euleroutput}
+\begin{eulerprompt}
+>A\(\backslash\)b // hasilkali invers A dan b, A^(-1)b 
+\end{eulerprompt}
+\begin{euleroutput}
+             -2 
+            2.5 
+\end{euleroutput}
+\begin{eulerprompt}
+>inv(A).b
+\end{eulerprompt}
+\begin{euleroutput}
+             -2 
+            2.5 
+\end{euleroutput}
+\begin{eulerprompt}
+>A\(\backslash\)A   //A^(-1)A
+\end{eulerprompt}
+\begin{euleroutput}
+              1             0 
+              0             1 
+\end{euleroutput}
+\begin{eulercomment}
+Perkalian dari matriks dengan inverse matriks itu sendiri akan
+menghasilkan matriks identitas.
+\end{eulercomment}
+\begin{eulerprompt}
+>inv(A).A
+\end{eulerprompt}
+\begin{euleroutput}
+              1             0 
+              0             1 
+\end{euleroutput}
+\begin{eulercomment}
+Perkalian matriks dan perpangkatan matriks.
+\end{eulercomment}
+\begin{eulerprompt}
+>A*A //perkalin elemen-elemen matriks seletak
+\end{eulerprompt}
+\begin{euleroutput}
+              1             4 
+              9            16 
+\end{euleroutput}
+\begin{eulercomment}
+b\textasciicircum{}2 tidak sama dengan b*b. b\textasciicircum{}2 artinya kalian memangkatkan masing
+masing elemen matriks dengan 2. Sedangkan b*b atrinya kalian
+mengalikan sebuah matriks (dengan aturan perkalian matriks biasa).
+\end{eulercomment}
+\begin{eulerprompt}
+>b^2 // perpangkatan elemen-elemen matriks/vektor
+\end{eulerprompt}
+\begin{euleroutput}
+              9 
+             16 
+\end{euleroutput}
+\begin{eulercomment}
+Jika dalam operasi matriks tersebut terdapat perkalian vektor atau
+skalar, maka operasi tersebut dieksekusi dengan cara perkalian biasa
+antara vektor atau skalar dengan masing masing elemen matriks.
+\end{eulercomment}
+\begin{eulerprompt}
+>2*A
+\end{eulerprompt}
+\begin{euleroutput}
+              2             4 
+              6             8 
+\end{euleroutput}
+\begin{eulercomment}
+Misalnya jika operan adalah vektor kolom, elemen-elemennya diterapkan
+ke semua baris A.
+\end{eulercomment}
+\begin{eulerprompt}
+>[1,2]*A
+\end{eulerprompt}
+\begin{euleroutput}
+              1             4 
+              3             8 
+\end{euleroutput}
+\begin{eulercomment}
+Jika itu adalah vektor baris, maka berlaku untuk semua kolom
+\end{eulercomment}
+\begin{eulerprompt}
+>A*[2,3]
+\end{eulerprompt}
+\begin{euleroutput}
+              2             6 
+              6            12 
+\end{euleroutput}
+\begin{eulercomment}
+Kita dapat membayangkan perkalian ini seolah-olah vektor baris v telah
+diduplikasi untuk membentuk matriks dengan ukuran yang sama dengan A.
+\end{eulercomment}
+\begin{eulerprompt}
+>dup([1,2],2) // dup: menduplikasi/menggandakan vektor [1,2] sebanyak 2 kali (baris)
+\end{eulerprompt}
+\begin{euleroutput}
+              1             2 
+              1             2 
+\end{euleroutput}
+\begin{eulerprompt}
+>A*dup([1,2],2) 
+\end{eulerprompt}
+\begin{euleroutput}
+              1             4 
+              3             8 
+\end{euleroutput}
+\begin{eulercomment}
+Hal ini juga berlaku untuk dua vektor di mana satu vektor adalah
+vektor baris dan yang lainnya adalah vektor kolom. Kami menghitung i*j
+untuk i, j dari 1 sampai 5. Caranya adalah dengan mengalikan 1:5
+dengan transposenya. Bahasa matriks Euler secara otomatis menghasilkan
+sebuah tabel nilai.
+\end{eulercomment}
+\begin{eulerprompt}
+>(1:5)*(1:5)' // hasilkali elemen-elemen vektor baris dan vektor kolom
+\end{eulerprompt}
+\begin{euleroutput}
+              1             2             3             4             5 
+              2             4             6             8            10 
+              3             6             9            12            15 
+              4             8            12            16            20 
+              5            10            15            20            25 
+\end{euleroutput}
+\begin{eulercomment}
+Sekali lagi, ingat bahwa ini bukan matriks produk!
+\end{eulercomment}
+\begin{eulerprompt}
+>(1:5).(1:5)' // hasilkali vektor baris dan vektor kolom
+\end{eulerprompt}
+\begin{euleroutput}
+  55
+\end{euleroutput}
+\begin{eulerprompt}
+>sum((1:5)*(1:5)) // sama hasilnya
+\end{eulerprompt}
+\begin{euleroutput}
+  55
+\end{euleroutput}
+\begin{eulercomment}
+Bahkan operasi seperti \textless{} atau == bekerja dengan cara yang sama.
+\end{eulercomment}
+\begin{eulerprompt}
+>(1:10)<6 // menguji elemen-elemen yang kurang dari 6
+\end{eulerprompt}
+\begin{euleroutput}
+  [1,  1,  1,  1,  1,  0,  0,  0,  0,  0]
+\end{euleroutput}
+\begin{eulercomment}
+Misalnya kita dapat menghitung jumlah elemen yang memenuhi kondisi
+tertentu dengn fungsi sum().
+\end{eulercomment}
+\begin{eulerprompt}
+>sum((1:10)<6) // banyak elemen yang kurang dari 6
+\end{eulerprompt}
+\begin{euleroutput}
+  5
+\end{euleroutput}
+\begin{eulercomment}
+Euler memiliki operator perbandingan, seperti “==”, yang memeriksa
+kesetaraan.
+
+
+Kita mendapatkan vektor 0 dan 1, di mana 1 berarti benar.
+\end{eulercomment}
+\begin{eulerprompt}
+>t=(1:10)^2; t==25 //menguji elemen2 t yang sama dengan 25 (hanya ada 1)
+\end{eulerprompt}
+\begin{euleroutput}
+  [0,  0,  0,  0,  1,  0,  0,  0,  0,  0]
+\end{euleroutput}
+\begin{eulercomment}
+Dari vektor seperti itu, “nonzeros” memilih elemen bukan nol.
+
+
+Dalam hal ini, kita mendapatkan indeks semua elemen yang lebih besar
+dari 50.
+\end{eulercomment}
+\begin{eulerprompt}
+>nonzeros(t>50) //indeks elemen2 t yang lebih besar daripada 50
+\end{eulerprompt}
+\begin{euleroutput}
+  [8,  9,  10]
+\end{euleroutput}
+\begin{eulercomment}
+Tentu saja, kita dapat menggunakan vektor indeks ini untuk mendapatkan
+nilai yang sesuai dalam t.
+\end{eulercomment}
+\begin{eulerprompt}
+>t[nonzeros(t>50)] //elemen2 t yang lebih besar daripada 50
+\end{eulerprompt}
+\begin{euleroutput}
+  [64,  81,  100]
+\end{euleroutput}
+\begin{eulercomment}
+Sebagai contoh, mari kita cari semua kuadrat dari angka 1 sampai 1000,
+yaitu 5 modulo 11 dan 3 modulo 13.
+\end{eulercomment}
+\begin{eulerprompt}
+>t=1:1000; nonzeros(mod(t^2,11)==5 && mod(t^2,13)==3)
+\end{eulerprompt}
+\begin{euleroutput}
+  [4,  48,  95,  139,  147,  191,  238,  282,  290,  334,  381,  425,
+  433,  477,  524,  568,  576,  620,  667,  711,  719,  763,  810,  854,
+  862,  906,  953,  997]
+\end{euleroutput}
+\begin{eulercomment}
+EMT tidak sepenuhnya efektif untuk komputasi bilangan bulat. EMT
+menggunakan floating point presisi ganda secara internal. Akan tetapi,
+hal ini sering kali sangat berguna.
+
+
+Kita dapat memeriksa bilangan prima. Mari kita cari tahu, berapa
+banyak kuadrat ditambah 1 yang merupakan bilangan prima.
+\end{eulercomment}
+\begin{eulerprompt}
+>t=1:1000; length(nonzeros(isprime(t^2+1)))
+\end{eulerprompt}
+\begin{euleroutput}
+  112
+\end{euleroutput}
+\begin{eulercomment}
+Fungsi nonzeros() hanya bekerja untuk vektor. Untuk matriks,
+menggunakan fungsi mnonzeros().
+\end{eulercomment}
+\begin{eulerprompt}
+>seed(2); A=random(3,4)
+\end{eulerprompt}
+\begin{euleroutput}
+       0.765761      0.401188      0.406347      0.267829 
+        0.13673      0.390567      0.495975      0.952814 
+       0.548138      0.006085      0.444255      0.539246 
+\end{euleroutput}
+\begin{eulercomment}
+Ini mengembalikan indeks elemen, yang bukan nol.
+\end{eulercomment}
+\begin{eulerprompt}
+>k=mnonzeros(A<0.4) //indeks elemen2 A yang kurang dari 0,4
+\end{eulerprompt}
+\begin{euleroutput}
+              1             4 
+              2             1 
+              2             2 
+              3             2 
+\end{euleroutput}
+\begin{eulercomment}
+Indeks ini dapat digunakan untuk menetapkan elemen ke suatu nilai.
+\end{eulercomment}
+\begin{eulerprompt}
+>mset(A,k,0) //mengganti elemen2 suatu matriks pada indeks tertentu
+\end{eulerprompt}
+\begin{euleroutput}
+       0.765761      0.401188      0.406347             0 
+              0             0      0.495975      0.952814 
+       0.548138             0      0.444255      0.539246 
+\end{euleroutput}
+\begin{eulercomment}
+Fungsi mset() juga dapat mengatur elemen-elemen pada indeks ke
+entri-entri matriks lain.
+\end{eulercomment}
+\begin{eulerprompt}
+>mset(A,k,-random(size(A)))
+\end{eulerprompt}
+\begin{euleroutput}
+       0.765761      0.401188      0.406347     -0.126917 
+      -0.122404     -0.691673      0.495975      0.952814 
+       0.548138     -0.483902      0.444255      0.539246 
+\end{euleroutput}
+\begin{eulercomment}
+And it is possible to get the elements in a vector.
+\end{eulercomment}
+\begin{eulerprompt}
+>mget(A,k)
+\end{eulerprompt}
+\begin{euleroutput}
+  [0.267829,  0.13673,  0.390567,  0.006085]
+\end{euleroutput}
+\begin{eulercomment}
+Fungsi lain yang berguna adalah extrema, yang mengembalikan nilai
+minimal dan maksimal di setiap baris matriks dan posisinya.
+\end{eulercomment}
+\begin{eulerprompt}
+>ex=extrema(A)
+\end{eulerprompt}
+\begin{euleroutput}
+       0.267829             4      0.765761             1 
+        0.13673             1      0.952814             4 
+       0.006085             2      0.548138             1 
+\end{euleroutput}
+\begin{eulercomment}
+Kita dapat menggunakan ini untuk mengekstrak nilai maksimal di tiap
+baris.
+\end{eulercomment}
+\begin{eulerprompt}
+>ex[,3]'
+\end{eulerprompt}
+\begin{euleroutput}
+  [0.765761,  0.952814,  0.548138]
+\end{euleroutput}
+\begin{eulercomment}
+Ini tentu saja sama dengan fungsi max().
+\end{eulercomment}
+\begin{eulerprompt}
+>max(A)'
+\end{eulerprompt}
+\begin{euleroutput}
+  [0.765761,  0.952814,  0.548138]
+\end{euleroutput}
+\begin{eulercomment}
+Tetapi dengan mget(), kita dapat mengekstrak indeks dan menggunakan
+informasi ini untuk mengekstrak elemen-elemen pada posisi yang sama
+dari matriks lain.
+\end{eulercomment}
+\begin{eulerprompt}
+>j=(1:rows(A))'|ex[,4], mget(-A,j)
+\end{eulerprompt}
+\begin{euleroutput}
+  ex is not a variable!
+  Error in:
+  j=(1:rows(A))'|ex[,4], mget(-A,j) ...
+                       ^
+\end{euleroutput}
+\eulersubheading{Soal Latihan Tambahan Bahasa Matriks}
+\begin{eulerprompt}
+>A=[1,2;4,3]; B=[-3,5;2,-1]; C=[1,-1;-1,1]; D=[1,1;1,1];
+>A-B
+\end{eulerprompt}
+\begin{euleroutput}
+       4.0000     -3.0000 
+       2.0000      4.0000 
+\end{euleroutput}
+\begin{eulerprompt}
+>A.B
+\end{eulerprompt}
+\begin{euleroutput}
+       1.0000      3.0000 
+      -6.0000     17.0000 
+\end{euleroutput}
+\begin{eulerprompt}
+>C.D
+\end{eulerprompt}
+\begin{euleroutput}
+       0.0000      0.0000 
+       0.0000      0.0000 
+\end{euleroutput}
+\begin{eulercomment}
+Cari hasil kali invers matriks koefisien dengan matriks konstanta
+berikut.\\
+\end{eulercomment}
+\begin{eulerformula}
+\[
+x+2y-3z=9
+\]
+\end{eulerformula}
+\begin{eulerformula}
+\[
+2x-y+2z=-8
+\]
+\end{eulerformula}
+\begin{eulerformula}
+\[
+3x-y-4z=3
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>A=[1,2,-3;2,-1,2;3,-1,-4]; B=[9;-8;3];
+>X=A\(\backslash\)B
+\end{eulerprompt}
+\begin{euleroutput}
+      -1.0000 
+       2.0000 
+      -2.0000 
+\end{euleroutput}
+\begin{eulerprompt}
+>(-1)*D
+\end{eulerprompt}
+\begin{euleroutput}
+      -1.0000     -1.0000 
+      -1.0000     -1.0000 
+\end{euleroutput}
+\begin{eulerprompt}
+>E=[-1,0,7;3,-5,2]; F=[6;-4;1];
+>E.F
+\end{eulerprompt}
+\begin{euleroutput}
+       1.0000 
+      40.0000 
+\end{euleroutput}
+\eulerheading{Fungsi Matriks Lainnya (Membangun Matriks)}
+\begin{eulercomment}
+Untuk membangun sebuah matriks, kita dapat menumpuk satu matriks di
+atas matriks lainnya. Jika keduanya tidak memiliki jumlah kolom yang
+sama, kolom yang lebih pendek akan diisi dengan 0.
+
+
+(Untuk membangun sebuah matriks, kita dapat menumpuk satu matriks di
+atas matriks lainnya. Jika keduanya tidak memiliki jumlah kolom yang
+sama, kolom yang lebih pendek akan diisi dengan 0.)\\
+Translated with DeepL.com (free version)
+\end{eulercomment}
+\begin{eulerprompt}
+>v=1:3; v_v
+\end{eulerprompt}
+\begin{euleroutput}
+              1             2             3 
+              1             2             3 
+\end{euleroutput}
+\begin{eulercomment}
+Demikian juga, kita dapat melampirkan matriks ke matriks lain secara
+berdampingan, jika keduanya memiliki jumlah baris yang sama.
+\end{eulercomment}
+\begin{eulerprompt}
+>A=random(3,4); A|v'
+\end{eulerprompt}
+\begin{euleroutput}
+       0.032444     0.0534171      0.595713      0.564454             1 
+        0.83916      0.175552      0.396988       0.83514             2 
+      0.0257573      0.658585      0.629832      0.770895             3 
+\end{euleroutput}
+\begin{eulercomment}
+Jika keduanya tidak memiliki jumlah baris yang sama, matriks yang
+lebih pendek diisi dengan 0.
+
+
+Ada pengecualian untuk aturan ini. Bilangan real yang dilampirkan pada
+sebuah matriks akan digunakan sebagai kolom yang diisi dengan bilangan
+real tersebut.
+\end{eulercomment}
+\begin{eulerprompt}
+>A|1
+\end{eulerprompt}
+\begin{euleroutput}
+       0.032444     0.0534171      0.595713      0.564454             1 
+        0.83916      0.175552      0.396988       0.83514             1 
+      0.0257573      0.658585      0.629832      0.770895             1 
+\end{euleroutput}
+\begin{eulercomment}
+Dimungkinkan untuk membuat matriks vektor baris dan kolom.
+\end{eulercomment}
+\begin{eulerprompt}
+>[v;v]
+\end{eulerprompt}
+\begin{euleroutput}
+              1             2             3 
+              1             2             3 
+\end{euleroutput}
+\begin{eulerprompt}
+>[v',v']
+\end{eulerprompt}
+\begin{euleroutput}
+              1             1 
+              2             2 
+              3             3 
+\end{euleroutput}
+\begin{eulercomment}
+Tujuan utama dari hal ini adalah untuk menginterpretasikan vektor
+ekspresi untuk vektor kolom.
+\end{eulercomment}
+\begin{eulerprompt}
+>"[x,x^2]"(v')
+\end{eulerprompt}
+\begin{euleroutput}
+              1             1 
+              2             4 
+              3             9 
+\end{euleroutput}
+\begin{eulercomment}
+Untuk mendapatkan ukuran yang sama dengan A, kita dapat menggunakan
+fungsi berikut.
+\end{eulercomment}
+\begin{eulerprompt}
+>C=zeros(2,4); rows(C), cols(C), size(C), length(C)
+\end{eulerprompt}
+\begin{euleroutput}
+  2
+  4
+  [2,  4]
+  4
+\end{euleroutput}
+\begin{eulercomment}
+Untuk vektor, terdapat fungsi lenght().
+\end{eulercomment}
+\begin{eulerprompt}
+>length(2:10)
+\end{eulerprompt}
+\begin{euleroutput}
+  9
+\end{euleroutput}
+\begin{eulercomment}
+Ada banyak fungsi lain yang juga menghahsilkan matriks.
+\end{eulercomment}
+\begin{eulerprompt}
+>ones(2,2)
+\end{eulerprompt}
+\begin{euleroutput}
+              1             1 
+              1             1 
+\end{euleroutput}
+\begin{eulercomment}
+Ini juga dapat digunakan dengan satu parameter. Untuk mendapatkan
+vektor dengan angka selain 1, gunakan yang berikut ini.
+\end{eulercomment}
+\begin{eulerprompt}
+>ones(5)*6
+\end{eulerprompt}
+\begin{euleroutput}
+  [6,  6,  6,  6,  6]
+\end{euleroutput}
+\begin{eulercomment}
+Matriks angka acak juga dapat dibuat dengan acak (distribusi seragam)
+atau normal (distribusi Gauß).
+\end{eulercomment}
+\begin{eulerprompt}
+>random(2,2)
+\end{eulerprompt}
+\begin{euleroutput}
+        0.66566      0.831835 
+          0.977      0.544258 
+\end{euleroutput}
+\begin{eulercomment}
+Berikut ini adalah fungsi lain yang berguna, yang merestrukturisasi
+elemen-elemen matriks menjadi matriks lain.
+\end{eulercomment}
+\begin{eulerprompt}
+>redim(1:9,3,3) // menyusun elemen2 1, 2, 3, ..., 9 ke bentuk matriks 3x3
+\end{eulerprompt}
+\begin{euleroutput}
+              1             2             3 
+              4             5             6 
+              7             8             9 
+\end{euleroutput}
+\begin{eulercomment}
+Dengan fungsi berikut, kita dapat menggunakan fungsi ini dan fungsi
+dup untuk menulis fungsi rep(), yang mengulang sebuah vektor sebanyak
+n kali.
+\end{eulercomment}
+\begin{eulerprompt}
+>function rep(v,n) := redim(dup(v,n),1,n*cols(v))
+\end{eulerprompt}
+\begin{eulercomment}
+Mari kita coba.
+\end{eulercomment}
+\begin{eulerprompt}
+>rep(1:3,5)
+\end{eulerprompt}
+\begin{euleroutput}
+  [1,  2,  3,  1,  2,  3,  1,  2,  3,  1,  2,  3,  1,  2,  3]
+\end{euleroutput}
+\begin{eulercomment}
+Fungsi multdup() menduplikasi elemen vektor.
+\end{eulercomment}
+\begin{eulerprompt}
+>multdup(1:3,5), multdup(1:3,[2,3,2])
+\end{eulerprompt}
+\begin{euleroutput}
+  [1,  1,  1,  1,  1,  2,  2,  2,  2,  2,  3,  3,  3,  3,  3]
+  [1,  1,  2,  2,  2,  3,  3]
+\end{euleroutput}
+\begin{eulercomment}
+Fungsi flipx() dan flipy() membalik urutan baris atau kolom dari
+sebuah matriks. Misalnya, fungsi flipx() membalik secara horizontal.
+\end{eulercomment}
+\begin{eulerprompt}
+>flipx(1:5) //membalik elemen2 vektor baris
+\end{eulerprompt}
+\begin{euleroutput}
+  [5,  4,  3,  2,  1]
+\end{euleroutput}
+\begin{eulercomment}
+Untuk merotasi, Euler mempunyai fungsi rotleft() dan rotright.
+\end{eulercomment}
+\begin{eulerprompt}
+>rotleft(1:5) // memutar elemen2 vektor baris
+\end{eulerprompt}
+\begin{euleroutput}
+  [2,  3,  4,  5,  1]
+\end{euleroutput}
+\begin{eulercomment}
+Fungsi khusus adalah drop(v,i), yang menghapus elemen dengan indeks di
+i dari vektor v.
+\end{eulercomment}
+\begin{eulerprompt}
+>drop(10:20,3)
+\end{eulerprompt}
+\begin{euleroutput}
+  [10,  11,  13,  14,  15,  16,  17,  18,  19,  20]
+\end{euleroutput}
+\begin{eulercomment}
+Perhatikan bahwa vektor i dalam drop(v,i) merujuk pada indeks elemen
+dalam v, bukan nilai elemen. Jika Anda ingin menghapus elemen, Anda
+harus menemukan elemen-elemen tersebut terlebih dahulu. Fungsi
+indexof(v,x) dapat digunakan untuk menemukan elemen x dalam vektor
+terurut v.
+\end{eulercomment}
+\begin{eulerprompt}
+>v=primes(50), i=indexof(v,10:20), drop(v,i)
+\end{eulerprompt}
+\begin{euleroutput}
+  [2,  3,  5,  7,  11,  13,  17,  19,  23,  29,  31,  37,  41,  43,  47]
+  [0,  5,  0,  6,  0,  0,  0,  7,  0,  8,  0]
+  [2,  3,  5,  7,  23,  29,  31,  37,  41,  43,  47]
+\end{euleroutput}
+\begin{eulercomment}
+Seperti yang Anda lihat, tidak ada salahnya menyertakan indeks di luar
+jangkauan (seperti 0), indeks ganda, atau indeks yang tidak diurutkan.
+\end{eulercomment}
+\begin{eulerprompt}
+>drop(1:10,shuffle([0,0,5,5,7,12,12]))
+\end{eulerprompt}
+\begin{euleroutput}
+  [1,  2,  3,  4,  6,  8,  9,  10]
+\end{euleroutput}
+\begin{eulercomment}
+Ada beberapa fungsi khusus untuk mengatur diagonal atau menghasilkan
+matriks diagonal.
+
+
+Kita mulai dengan matriks identitas.
+\end{eulercomment}
+\begin{eulerprompt}
+>A=id(5) // matriks identitas 5x5
+\end{eulerprompt}
+\begin{euleroutput}
+              1             0             0             0             0 
+              0             1             0             0             0 
+              0             0             1             0             0 
+              0             0             0             1             0 
+              0             0             0             0             1 
+\end{euleroutput}
+\begin{eulercomment}
+Kemudian, kami menetapkan diagonal bawah (-1) ke 1:4.
+\end{eulercomment}
+\begin{eulerprompt}
+>setdiag(A,-1,1:4) //mengganti diagonal di bawah diagonal utama
+\end{eulerprompt}
+\begin{euleroutput}
+              1             0             0             0             0 
+              1             1             0             0             0 
+              0             2             1             0             0 
+              0             0             3             1             0 
+              0             0             0             4             1 
+\end{euleroutput}
+\begin{eulercomment}
+Perhatikan bahwa kita tidak mengubah matriks A. Kita mendapatkan
+sebuah matriks baru sebagai hasil dari setdiag().
+
+
+Berikut adalah sebuah fungsi yang mengembalikan sebuah matriks
+tri-diagonal.
+\end{eulercomment}
+\begin{eulerprompt}
+>function tridiag (n,a,b,c) := setdiag(setdiag(b*id(n),1,c),-1,a); ...
+>tridiag(5,1,2,3)
+\end{eulerprompt}
+\begin{euleroutput}
+              2             3             0             0             0 
+              1             2             3             0             0 
+              0             1             2             3             0 
+              0             0             1             2             3 
+              0             0             0             1             2 
+\end{euleroutput}
+\begin{eulercomment}
+Diagonal sebuah matriks juga dapat diekstrak dari matriks. Untuk
+mendemonstrasikan hal ini, kami merestrukturisasi vektor 1:9 menjadi
+matriks 3x3.
+\end{eulercomment}
+\begin{eulerprompt}
+>A=redim(1:9,3,3)
+\end{eulerprompt}
+\begin{euleroutput}
+              1             2             3 
+              4             5             6 
+              7             8             9 
+\end{euleroutput}
+\begin{eulercomment}
+Sekarang kita dapat mengekstrak diagonal.
+\end{eulercomment}
+\begin{eulerprompt}
+>d=getdiag(A,0)
+\end{eulerprompt}
+\begin{euleroutput}
+  [1,  5,  9]
+\end{euleroutput}
+\begin{eulercomment}
+Contoh: Kita dapat membagi matriks dengan diagonalnya. Bahasa matriks
+memperhatikan bahwa vektor kolom d diterapkan ke matriks baris demi
+baris.
+\end{eulercomment}
+\begin{eulerprompt}
+>fraction A/d'
+\end{eulerprompt}
+\begin{euleroutput}
+  Variable d not found!
+  Error in:
+  fraction A/d' ...
+               ^
+\end{euleroutput}
+\eulersubheading{Soal Latihan Tambahan Fungsi Lain Matriks}
+\begin{eulerprompt}
+>v=random(1,3)
+\end{eulerprompt}
+\begin{euleroutput}
+       0.2623      0.8666      0.5361 
+\end{euleroutput}
+\begin{eulerprompt}
+>A=ones(3,3)
+\end{eulerprompt}
+\begin{euleroutput}
+       1.0000      1.0000      1.0000 
+       1.0000      1.0000      1.0000 
+       1.0000      1.0000      1.0000 
+\end{euleroutput}
+\begin{eulerprompt}
+>B=A|v
+\end{eulerprompt}
+\begin{euleroutput}
+  Real 3 x 6 matrix
+  
+       1.0000      1.0000      1.0000      0.2623     ...
+       1.0000      1.0000      1.0000      0.0000     ...
+       1.0000      1.0000      1.0000      0.0000     ...
+\end{euleroutput}
+\begin{eulerprompt}
+>flipx(B)
+\end{eulerprompt}
+\begin{euleroutput}
+  Real 3 x 6 matrix
+  
+       0.5361      0.8666      0.2623      1.0000     ...
+       0.0000      0.0000      0.0000      1.0000     ...
+       0.0000      0.0000      0.0000      1.0000     ...
+\end{euleroutput}
+\begin{eulerprompt}
+>d=getdiag(B,0)
+\end{eulerprompt}
+\begin{euleroutput}
+       1.0000      1.0000      1.0000 
+\end{euleroutput}
+\begin{eulerprompt}
+>fraction d/v
+\end{eulerprompt}
+\begin{euleroutput}
+  [278845/73128,  94046/81499,  828523/444202]
+\end{euleroutput}
+\eulerheading{Vektorisasi}
+\begin{eulercomment}
+Hampir semua fungsi di Euler juga dapat digunakan untuk input matriks
+dan vektor, jika hal ini masuk akal.
+
+
+Sebagai contoh, fungsi sqrt() menghitung akar kuadrat dari semua
+elemen vektor atau matriks.
+\end{eulercomment}
+\begin{eulerprompt}
+>sqrt(1:3)
+\end{eulerprompt}
+\begin{euleroutput}
+  [1,  1.41421,  1.73205]
+\end{euleroutput}
+\begin{eulercomment}
+Jadi, Anda dapat dengan mudah membuat tabel nilai. Ini adalah salah
+satu cara untuk memplot sebuah fungsi (alternatif lainnya menggunakan
+ekspresi).
+\end{eulercomment}
+\begin{eulerprompt}
+>x=1:0.01:5; y=log(x)/x^2; // terlalu panjang untuk ditampikan
+\end{eulerprompt}
+\begin{eulercomment}
+Dengan ini dan operator titik dua a:delta:b, vektor nilai fungsi dapat
+dihasilkan dengan mudah.
+
+
+Pada contoh berikut, kita membuat vektor nilai t[i] dengan jarak 0.1
+dari -1 hingga 1. Kemudian kita membuat vektor nilai dari fungsi
+
+
+lateks: s = t\textasciicircum{}3-t
+\end{eulercomment}
+\begin{eulerprompt}
+>t=-1:0.1:1; s=t^3-t
+\end{eulerprompt}
+\begin{euleroutput}
+  [0,  0.171,  0.288,  0.357,  0.384,  0.375,  0.336,  0.273,  0.192,
+  0.099,  0,  -0.099,  -0.192,  -0.273,  -0.336,  -0.375,  -0.384,
+  -0.357,  -0.288,  -0.171,  0]
+\end{euleroutput}
+\begin{eulercomment}
+EMT memperluas operator untuk skalar, vektor, dan matriks dengan cara
+yang jelas.
+
+
+Misalnya, vektor kolom dikalikan vektor baris diperluas menjadi
+matriks, jika operator diterapkan. Berikut ini, v' adalah vektor yang
+ditransposisikan (vektor kolom).
+\end{eulercomment}
+\begin{eulerprompt}
+>shortest (1:5)*(1:5)'
+\end{eulerprompt}
+\begin{euleroutput}
+       1      2      3      4      5 
+       2      4      6      8     10 
+       3      6      9     12     15 
+       4      8     12     16     20 
+       5     10     15     20     25 
+\end{euleroutput}
+\begin{eulercomment}
+Perhatikan, bahwa ini sangat berbeda dengan hasil kali matriks. Hasil
+kali matriks dilambangkan dengan sebuah titik “.” dalam EMT.
+\end{eulercomment}
+\begin{eulerprompt}
+>(1:5).(1:5)'
+\end{eulerprompt}
+\begin{euleroutput}
+  55
+\end{euleroutput}
+\begin{eulercomment}
+Secara default, vektor baris dicetak dalam format ringkas.
+\end{eulercomment}
+\begin{eulerprompt}
+>[1,2,3,4]
+\end{eulerprompt}
+\begin{euleroutput}
+  [1,  2,  3,  4]
+\end{euleroutput}
+\begin{eulercomment}
+Untuk matriks, operator khusus . menyatakan perkalian matriks, dan A'
+menyatakan transposisi. Matriks 1x1 dapat digunakan seperti halnya
+bilangan real.
+\end{eulercomment}
+\begin{eulerprompt}
+>v:=[1,2]; v.v', %^2
+\end{eulerprompt}
+\begin{euleroutput}
+  5
+  25
+\end{euleroutput}
+\begin{eulercomment}
+Untuk mentranspose matriks kita dapat gunakan apostrophe.
+\end{eulercomment}
+\begin{eulerprompt}
+>v=1:4; v'
+\end{eulerprompt}
+\begin{euleroutput}
+              1 
+              2 
+              3 
+              4 
+\end{euleroutput}
+\begin{eulercomment}
+Jadi kita dapat menghitung matriks A dikali vektor b.
+\end{eulercomment}
+\begin{eulerprompt}
+>A=[1,2,3,4;5,6,7,8]; A.v'
+\end{eulerprompt}
+\begin{euleroutput}
+             30 
+             70 
+\end{euleroutput}
+\begin{eulercomment}
+Ingat bahwa v masih vektor baris. Jadi v'.v berbeda dengan v.v'.
+\end{eulercomment}
+\begin{eulerprompt}
+>v'.v
+\end{eulerprompt}
+\begin{euleroutput}
+              1             2             3             4 
+              2             4             6             8 
+              3             6             9            12 
+              4             8            12            16 
+\end{euleroutput}
+\begin{eulercomment}
+v.v' menghitung norma v kuadrat untuk vektor baris v. Hasilnya adalah
+vektor 1x1, yang berfungsi seperti bilangan real.
+\end{eulercomment}
+\begin{eulerprompt}
+>v.v'
+\end{eulerprompt}
+\begin{euleroutput}
+  30
+\end{euleroutput}
+\begin{eulercomment}
+Ada juga norma fungsi (bersama dengan banyak fungsi Aljabar Linier
+lainnya).
+\end{eulercomment}
+\begin{eulerprompt}
+>norm(v)^2
+\end{eulerprompt}
+\begin{euleroutput}
+  30
+\end{euleroutput}
+\begin{eulercomment}
+Operator dan fungsi mematuhi bahasa matriks Euler.
+
+
+Berikut ini adalah ringkasan aturannya.
+
+
+- Sebuah fungsi yang diterapkan pada vektor atau matriks diterapkan
+pada setiap elemen.
+
+
+- Operator yang beroperasi pada dua matriks dengan ukuran yang sama
+diterapkan secara berpasangan pada elemen-elemen matriks.
+
+
+- Jika dua matriks memiliki dimensi yang berbeda, keduanya diperluas
+dengan cara yang masuk akal, sehingga memiliki ukuran yang sama.
+
+Misalnya, nilai skalar dikalikan vektor mengalikan nilai dengan setiap
+elemen vektor. Atau matriks dikali vektor (dengan *, bukan .)
+memperluas vektor ke ukuran matriks dengan menduplikasinya.\\
+Berikut ini adalah kasus sederhana dengan operator \textasciicircum{}.
+\end{eulercomment}
+\begin{eulerprompt}
+>[1,2,3]^2
+\end{eulerprompt}
+\begin{euleroutput}
+  [1,  4,  9]
+\end{euleroutput}
+\begin{eulercomment}
+Ini adalah kasus yang lebih rumit. Vektor baris dikalikan vektor kolom
+memperluas keduanya dengan menduplikasi.
+\end{eulercomment}
+\begin{eulerprompt}
+>v:=[1,2,3]; v*v'
+\end{eulerprompt}
+\begin{euleroutput}
+              1             2             3 
+              2             4             6 
+              3             6             9 
+\end{euleroutput}
+\begin{eulercomment}
+Perhatikan bahwa hasil kali skalar menggunakan hasil kali matriks,
+bukan tanda *!
+\end{eulercomment}
+\begin{eulerprompt}
+>v.v'
+\end{eulerprompt}
+\begin{euleroutput}
+  14
+\end{euleroutput}
+\begin{eulercomment}
+Ada banyak fungsi untuk matriks. Kami memberikan daftar singkat. Anda
+harus membaca dokumentasi untuk informasi lebih lanjut mengenai
+perintah-perintah ini.
+
+\end{eulercomment}
+\begin{eulerttcomment}
+  sum,prod menghitung jumlah dan hasil kali dari baris-baris
+  cumsum,cumprod melakukan hal yang sama secara komulatif
+  menghitung nilai ekstream dari setiap baris
+  extrema mengembalikan vektor dengan informasi ekstresm
+  diag(A,i) mengembalikan diagonal ke-i
+  setdiag(A,i,v) menetapkan diagonal ke-i
+  id(n) matriks indentitas
+  det(A) the determinan
+  charpoly(A) polinomial karakteristik
+  eigenvalues(A) nilai eigen
+\end{eulerttcomment}
+\begin{eulerprompt}
+>v*v, sum(v*v), cumsum(v*v)
+\end{eulerprompt}
+\begin{euleroutput}
+  [1,  4,  9]
+  14
+  [1,  5,  14]
+\end{euleroutput}
+\begin{eulercomment}
+Operator : menghasilkan vektor baris dengan spasi yang sama, opsional
+dengan ukuran langkah.
+\end{eulercomment}
+\begin{eulerprompt}
+>1:4, 1:2:10
+\end{eulerprompt}
+\begin{euleroutput}
+  [1,  2,  3,  4]
+  [1,  3,  5,  7,  9]
+\end{euleroutput}
+\begin{eulercomment}
+Untuk menggabungkan matriks dan vektor, terdapat operator “\textbar{}” dan “\_”.
+\end{eulercomment}
+\begin{eulerprompt}
+>[1,2,3]|[4,5], [1,2,3]_1
+\end{eulerprompt}
+\begin{euleroutput}
+  [1,  2,  3,  4,  5]
+              1             2             3 
+              1             1             1 
+\end{euleroutput}
+\begin{eulercomment}
+Elemen-elemen dari sebuah matriks disebut dengan “A[i,j]”.
+\end{eulercomment}
+\begin{eulerprompt}
+>A:=[1,2,3;4,5,6;7,8,9]; A[2,3]
+\end{eulerprompt}
+\begin{euleroutput}
+  6
+\end{euleroutput}
+\begin{eulercomment}
+Untuk vektor baris atau kolom, v[i] adalah elemen ke-i dari vektor
+tersebut. Untuk matriks, ini mengembalikan baris ke-i dari matriks.
+\end{eulercomment}
+\begin{eulerprompt}
+>v:=[2,4,6,8]; v[3], A[3]
+\end{eulerprompt}
+\begin{euleroutput}
+  6
+  [7,  8,  9]
+\end{euleroutput}
+\begin{eulercomment}
+Indeks juga dapat berupa vektor baris dari indeks. : menunjukkan semua
+indeks.
+\end{eulercomment}
+\begin{eulerprompt}
+>v[1:2], A[:,2]
+\end{eulerprompt}
+\begin{euleroutput}
+  [2,  4]
+              2 
+              5 
+              8 
+\end{euleroutput}
+\begin{eulercomment}
+Bentuk singkat untuk : adalah menghilangkan indeks sepenuhnya.
+\end{eulercomment}
+\begin{eulerprompt}
+>A[,2:3]
+\end{eulerprompt}
+\begin{euleroutput}
+              2             3 
+              5             6 
+              8             9 
+\end{euleroutput}
+\begin{eulercomment}
+Untuk tujuan vektorisasi, elemen-elemen matriks dapat diakses
+seolah-olah mereka adalah vektor.
+\end{eulercomment}
+\begin{eulerprompt}
+>A\{4\}
+\end{eulerprompt}
+\begin{euleroutput}
+  4
+\end{euleroutput}
+\begin{eulercomment}
+Sebuah matriks juga dapat diratakan, dengan menggunakan fungsi
+redim(). Hal ini diimplementasikan dalam fungsi flatten().
+\end{eulercomment}
+\begin{eulerprompt}
+>redim(A,1,prod(size(A))), flatten(A)
+\end{eulerprompt}
+\begin{euleroutput}
+  [1,  2,  3,  4,  5,  6,  7,  8,  9]
+  [1,  2,  3,  4,  5,  6,  7,  8,  9]
+\end{euleroutput}
+\begin{eulercomment}
+Untuk menggunakan matriks untuk tabel, mari kita atur ulang ke format
+default, dan menghitung tabel nilai sinus dan kosinus. Perhatikan
+bahwa sudut dalam radian secara default.
+\end{eulercomment}
+\begin{eulerprompt}
+>defformat; w=0°:45°:360°; w=w'; deg(w)
+\end{eulerprompt}
+\begin{euleroutput}
+              0 
+             45 
+             90 
+            135 
+            180 
+            225 
+            270 
+            315 
+            360 
+\end{euleroutput}
+\begin{eulercomment}
+Sekarang kita menambahkan kolom ke matriks.
+\end{eulercomment}
+\begin{eulerprompt}
+>M = deg(w)|w|cos(w)|sin(w)
+\end{eulerprompt}
+\begin{euleroutput}
+              0             0             1             0 
+             45      0.785398      0.707107      0.707107 
+             90        1.5708             0             1 
+            135       2.35619     -0.707107      0.707107 
+            180       3.14159            -1             0 
+            225       3.92699     -0.707107     -0.707107 
+            270       4.71239             0            -1 
+            315       5.49779      0.707107     -0.707107 
+            360       6.28319             1             0 
+\end{euleroutput}
+\begin{eulercomment}
+Dengan menggunakan bahasa matriks, kita dapat membuat beberapa tabel
+dari beberapa fungsi sekaligus.
+
+
+Pada contoh berikut, kita menghitung t[j]\textasciicircum{}i untuk i dari 1 hingga n.
+Kita mendapatkan sebuah matriks, di mana setiap baris adalah tabel t\textasciicircum{}i
+untuk satu i. Dengan kata lain, matriks tersebut memiliki
+elemen-elemen lateks: a\_\{i, j\} = t\_j\textasciicircum{}i, \textbackslash{}qad 1 \textbackslash{}le j \textbackslash{}le 101, \textbackslash{}qad 1
+\textbackslash{}le i \textbackslash{}le n
+
+
+Sebuah fungsi yang tidak bekerja untuk input vektor harus
+“divektorkan”. Hal ini dapat dicapai dengan kata kunci “map” dalam
+definisi fungsi. Kemudian fungsi akan dievaluasi untuk setiap elemen
+parameter vektor.
+
+
+Integrasi numerik integrate() hanya bekerja untuk batas interval
+skalar. Jadi kita perlu membuat vektornya.
+\end{eulercomment}
+\begin{eulerprompt}
+>function map f(x) := integrate("x^x",1,x)
+\end{eulerprompt}
+\begin{eulercomment}
+Kata kunci “map” membuat vektor fungsi. Fungsi ini sekarang akan
+bekerja\\
+ntuk vektor angka.
+\end{eulercomment}
+\begin{eulerprompt}
+>f([1:5])
+\end{eulerprompt}
+\begin{euleroutput}
+       0.0000      2.0504     13.7251    113.3356   1241.0333 
+\end{euleroutput}
+\eulersubheading{Soal Latihan Tambahan Vektorisasi}
+\begin{eulerprompt}
+>A=redim(5:20,4,4)
+\end{eulerprompt}
+\begin{euleroutput}
+       5.0000      6.0000      7.0000      8.0000 
+       9.0000     10.0000     11.0000     12.0000 
+      13.0000     14.0000     15.0000     16.0000 
+      17.0000     18.0000     19.0000     20.0000 
+\end{euleroutput}
+\begin{eulerprompt}
+>B=sqrt(rotright(A))
+\end{eulerprompt}
+\begin{euleroutput}
+       2.8284      2.2361      2.4495      2.6458 
+       3.4641      3.0000      3.1623      3.3166 
+       4.0000      3.6056      3.7417      3.8730 
+       4.4721      4.1231      4.2426      4.3589 
+\end{euleroutput}
+\begin{eulerprompt}
+>shortest A*A'
+\end{eulerprompt}
+\begin{euleroutput}
+      25     54     91 1.4e+02 
+      54  1e+02 1.5e+02 2.2e+02 
+      91 1.5e+02 2.3e+02  3e+02 
+  1.4e+02 2.2e+02  3e+02  4e+02 
+\end{euleroutput}
+\begin{eulerprompt}
+>A.A'
+\end{eulerprompt}
+\begin{euleroutput}
+     174.0000    278.0000    382.0000    486.0000 
+     278.0000    446.0000    614.0000    782.0000 
+     382.0000    614.0000    846.0000   1078.0000 
+     486.0000    782.0000   1078.0000   1374.0000 
+\end{euleroutput}
+\begin{eulerprompt}
+>B[2,2]
+\end{eulerprompt}
+\begin{euleroutput}
+       3.0000 
+\end{euleroutput}
+\begin{eulerprompt}
+>C=A|A'
+\end{eulerprompt}
+\begin{euleroutput}
+  Real 4 x 8 matrix
+  
+       5.0000      6.0000      7.0000      8.0000     ...
+       9.0000     10.0000     11.0000     12.0000     ...
+      13.0000     14.0000     15.0000     16.0000     ...
+      17.0000     18.0000     19.0000     20.0000     ...
+\end{euleroutput}
+\eulerheading{Sub-Matriks dan Elemen Matriks}
+\begin{eulercomment}
+Untuk mengakses elemen matriks, gunakan notasi kurung.
+\end{eulercomment}
+\begin{eulerprompt}
+>A=[1,2,3;4,5,6;7,8,9], A[2,2]
+\end{eulerprompt}
+\begin{euleroutput}
+              1             2             3 
+              4             5             6 
+              7             8             9 
+  5
+\end{euleroutput}
+\begin{eulercomment}
+Kita dapat mengakses baris lengkap dari sebuah matriks.
+\end{eulercomment}
+\begin{eulerprompt}
+>A[2]
+\end{eulerprompt}
+\begin{euleroutput}
+  [4,  5,  6]
+\end{euleroutput}
+\begin{eulercomment}
+Untuk vektor baris atau kolom, ini mengembalikan elemen vektor.
+\end{eulercomment}
+\begin{eulerprompt}
+>v=1:3; v[2]
+\end{eulerprompt}
+\begin{euleroutput}
+  2
+\end{euleroutput}
+\begin{eulercomment}
+Untuk memastikan, Anda mendapatkan baris pertama untuk matriks 1xn dan
+mxn, tentukan semua kolom menggunakan indeks kedua yang kosong.
+\end{eulercomment}
+\begin{eulerprompt}
+>A[2,]
+\end{eulerprompt}
+\begin{euleroutput}
+  [4,  5,  6]
+\end{euleroutput}
+\begin{eulercomment}
+Jika indeks adalah vektor indeks, Euler akan mengembalikan baris-baris
+yang sesuai dari matriks.
+
+
+Di sini kita menginginkan baris pertama dan kedua dari A.
+\end{eulercomment}
+\begin{eulerprompt}
+>A[[1,2]]
+\end{eulerprompt}
+\begin{euleroutput}
+              1             2             3 
+              4             5             6 
+\end{euleroutput}
+\begin{eulercomment}
+Kita bahkan dapat menyusun ulang A menggunakan vektor indeks.
+Tepatnya, kita tidak mengubah A di sini, tetapi menghitung versi
+susunan ulang dari A.
+\end{eulercomment}
+\begin{eulerprompt}
+>A[[3,2,1]]
+\end{eulerprompt}
+\begin{euleroutput}
+              7             8             9 
+              4             5             6 
+              1             2             3 
+\end{euleroutput}
+\begin{eulercomment}
+Trik indeks juga bekerja dengan kolom.
+
+
+Contoh ini memilih semua baris A dan kolom kedua dan ketiga.
+\end{eulercomment}
+\begin{eulerprompt}
+>A[1:3,2:3]
+\end{eulerprompt}
+\begin{euleroutput}
+              2             3 
+              5             6 
+              8             9 
+\end{euleroutput}
+\begin{eulercomment}
+Untuk singkatan “:” menunjukkan semua indeks baris atau kolom.
+\end{eulercomment}
+\begin{eulerprompt}
+>A[:,3]
+\end{eulerprompt}
+\begin{euleroutput}
+              3 
+              6 
+              9 
+\end{euleroutput}
+\begin{eulercomment}
+Sebagai alternatif, biarkan indeks pertama kosong.
+\end{eulercomment}
+\begin{eulerprompt}
+>A[,2:3]
+\end{eulerprompt}
+\begin{euleroutput}
+              2             3 
+              5             6 
+              8             9 
+\end{euleroutput}
+\begin{eulercomment}
+Kita juga bisa mendapatkan baris terakhir dari A.
+\end{eulercomment}
+\begin{eulerprompt}
+>A[-1]
+\end{eulerprompt}
+\begin{euleroutput}
+  [7,  8,  9]
+\end{euleroutput}
+\begin{eulercomment}
+Now let us change elements of A by assigning a submatrix of A to some
+value. This does in fact change the stored matrix A.
+\end{eulercomment}
+\begin{eulerprompt}
+>A[1,1]=4
+\end{eulerprompt}
+\begin{euleroutput}
+              4             2             3 
+              4             5             6 
+              7             8             9 
+\end{euleroutput}
+\begin{eulercomment}
+Kita juga dapat menetapkan nilai pada baris di A.
+\end{eulercomment}
+\begin{eulerprompt}
+>A[1]=[-1,-1,-1]
+\end{eulerprompt}
+\begin{euleroutput}
+             -1            -1            -1 
+              4             5             6 
+              7             8             9 
+\end{euleroutput}
+\begin{eulercomment}
+Kami bahkan dapat menetapkan ke sub-matriks jika memiliki ukuran yang
+tepat.
+\end{eulercomment}
+\begin{eulerprompt}
+>A[1:2,1:2]=[5,6;7,8]
+\end{eulerprompt}
+\begin{euleroutput}
+              5             6            -1 
+              7             8             6 
+              7             8             9 
+\end{euleroutput}
+\begin{eulercomment}
+Selain itu, beberapa jalan pintas diperbolehkan.
+\end{eulercomment}
+\begin{eulerprompt}
+>A[1:2,1:2]=0
+\end{eulerprompt}
+\begin{euleroutput}
+              0             0            -1 
+              0             0             6 
+              7             8             9 
+\end{euleroutput}
+\begin{eulercomment}
+Peringatan: Indeks di luar batas akan mengembalikan matriks kosong,
+atau pesan kesalahan, tergantung pada pengaturan sistem. Standarnya
+adalah pesan kesalahan. Namun, ingatlah bahwa indeks negatif dapat
+digunakan untuk mengakses elemen-elemen matriks yang dihitung dari
+akhir.
+\end{eulercomment}
+\begin{eulerprompt}
+>A[4]
+\end{eulerprompt}
+\eulersubheading{Soal Latihan Tambahan Sub Matriks dan Elemen Matriks}
+\begin{eulerprompt}
+>N=random(4,5)
+\end{eulerprompt}
+\begin{euleroutput}
+       0.4935      0.6013      0.6595      0.9675      0.1932 
+       0.9359      0.0729      0.9890      0.0104      0.3566 
+       0.5214      0.4289      0.1681      0.1827      0.2880 
+       0.7500      0.4729      0.3244      0.3404      0.1955 
+\end{euleroutput}
+\begin{eulerprompt}
+>N[3,4]
+\end{eulerprompt}
+\begin{euleroutput}
+       0.1827 
+\end{euleroutput}
+\begin{eulerprompt}
+>N[[2,3]]
+\end{eulerprompt}
+\begin{euleroutput}
+       0.9359      0.0729      0.9890      0.0104      0.3566 
+       0.5214      0.4289      0.1681      0.1827      0.2880 
+\end{euleroutput}
+\begin{eulerprompt}
+>N[2:4,1:3]
+\end{eulerprompt}
+\begin{euleroutput}
+       0.9359      0.0729      0.9890 
+       0.5214      0.4289      0.1681 
+       0.7500      0.4729      0.3244 
+\end{euleroutput}
+\begin{eulerprompt}
+>N[:,5]
+\end{eulerprompt}
+\begin{euleroutput}
+       0.1932 
+       0.3566 
+       0.2880 
+       0.1955 
+\end{euleroutput}
+\eulerheading{Mengurutkan dan Mengacak}
+\begin{eulercomment}
+Fungsi sort() mengurutkan vektor baris.
+\end{eulercomment}
+\begin{eulerprompt}
+>sort([5,6,4,8,1,9])
+\end{eulerprompt}
+\begin{euleroutput}
+  [1,  4,  5,  6,  8,  9]
+\end{euleroutput}
+\begin{eulercomment}
+Sering kali diperlukan untuk mengetahui indeks vektor yang diurutkan
+dalam vektor aslinya. Hal ini dapat digunakan untuk menyusun ulang
+vektor lain dengan cara yang sama.
+
+
+Mari kita mengacak sebuah vektor.
+\end{eulercomment}
+\begin{eulerprompt}
+>v=shuffle(1:10)
+\end{eulerprompt}
+\begin{euleroutput}
+  [4,  5,  10,  6,  8,  9,  1,  7,  2,  3]
+\end{euleroutput}
+\begin{eulercomment}
+Indeks berisi urutan v yang tepat.
+\end{eulercomment}
+\begin{eulerprompt}
+>\{vs,ind\}=sort(v); v[ind]
+\end{eulerprompt}
+\begin{euleroutput}
+  [1,  2,  3,  4,  5,  6,  7,  8,  9,  10]
+\end{euleroutput}
+\begin{eulercomment}
+Hal ini juga berlaku untuk vektor string.
+\end{eulercomment}
+\begin{eulerprompt}
+>s=["a","d","e","a","aa","e"]
+\end{eulerprompt}
+\begin{euleroutput}
+  a
+  d
+  e
+  a
+  aa
+  e
+\end{euleroutput}
+\begin{eulerprompt}
+>\{ss,ind\}=sort(s); ss
+\end{eulerprompt}
+\begin{euleroutput}
+  a
+  a
+  aa
+  d
+  e
+  e
+\end{euleroutput}
+\begin{eulercomment}
+Seperti yang Anda lihat, posisi entri ganda agak acak.
+\end{eulercomment}
+\begin{eulerprompt}
+>ind
+\end{eulerprompt}
+\begin{euleroutput}
+  Real 1 x 6 matrix
+  
+       4.0000      1.0000      5.0000      2.0000     ...
+\end{euleroutput}
+\begin{eulercomment}
+Fungsi unique mengembalikan daftar terurut dari elemen unik sebuah
+vektor.
+\end{eulercomment}
+\begin{eulerprompt}
+>intrandom(1,10,10), unique(%)
+\end{eulerprompt}
+\begin{euleroutput}
+  Real 1 x 10 matrix
+  
+       5.0000      3.0000      6.0000      8.0000     ...
+  Real 1 x 7 matrix
+  
+       3.0000      4.0000      5.0000      6.0000     ...
+\end{euleroutput}
+\begin{eulercomment}
+Hal ini juga berlaku untuk vektor string.
+\end{eulercomment}
+\begin{eulerprompt}
+>unique(s)
+\end{eulerprompt}
+\begin{euleroutput}
+  a
+  aa
+  d
+  e
+\end{euleroutput}
+\eulersubheading{Soal Latihan Tambahan Mengurutkan dan Mengacak}
+\begin{eulerprompt}
+>M=sort([99,104,32,17,11,56,29])
+\end{eulerprompt}
+\begin{euleroutput}
+  Real 1 x 7 matrix
+  
+      11.0000     17.0000     29.0000     32.0000     ...
+\end{euleroutput}
+\begin{eulerprompt}
+>shuffle(M)
+\end{eulerprompt}
+\begin{euleroutput}
+  Real 1 x 7 matrix
+  
+      17.0000     29.0000     32.0000     99.0000     ...
+\end{euleroutput}
+\begin{eulerprompt}
+>v=["1","4","7","4","0","12","1","5"]
+\end{eulerprompt}
+\begin{euleroutput}
+  1
+  4
+  7
+  4
+  0
+  12
+  1
+  5
+\end{euleroutput}
+\begin{eulerprompt}
+>unique(v)
+\end{eulerprompt}
+\begin{euleroutput}
+  0
+  1
+  12
+  4
+  5
+  7
+\end{euleroutput}
+\eulerheading{Aljabar Linier}
+\begin{eulercomment}
+EMT memiliki banyak fungsi untuk menyelesaikan sistem linier, sistem
+jarang, atau masalah regresi.
+
+
+Untuk sistem linier Ax=b, Anda dapat menggunakan algoritma Gauss,
+matriks invers, atau kecocokan linier. Operator A\textbackslash{}b menggunakan versi
+algoritma Gauss.
+\end{eulercomment}
+\begin{eulerprompt}
+>A=[1,2;3,4]; b=[5;6]; A\(\backslash\)b
+\end{eulerprompt}
+\begin{euleroutput}
+             -4 
+            4.5 
+\end{euleroutput}
+\begin{eulercomment}
+Sebagai contoh lain, kita membuat matriks 200x200 dan jumlah barisnya.
+Kemudian kita selesaikan Ax = b dengan menggunakan matriks
+kebalikannya. Kita mengukur kesalahan sebagai deviasi maksimal dari
+semua elemen dari 1, yang tentu saja merupakan solusi yang benar.
+\end{eulercomment}
+\begin{eulerprompt}
+>A=normal(200,200); b=sum(A); longest totalmax(abs(inv(A).b-1))
+\end{eulerprompt}
+\begin{euleroutput}
+    8.790745908981989e-13 
+\end{euleroutput}
+\begin{eulercomment}
+Jika sistem tidak memiliki solusi, kecocokan linier meminimalkan norma
+kesalahan Ax-b.
+\end{eulercomment}
+\begin{eulerprompt}
+>A=[1,2,3;4,5,6;7,8,9]
+\end{eulerprompt}
+\begin{euleroutput}
+       1.0000      2.0000      3.0000 
+       4.0000      5.0000      6.0000 
+       7.0000      8.0000      9.0000 
+\end{euleroutput}
+\begin{eulercomment}
+Determinan dari matriks ini adalah 0.
+\end{eulercomment}
+\begin{eulerprompt}
+>det(A)
+\end{eulerprompt}
+\begin{euleroutput}
+       0.0000 
+\end{euleroutput}
+\eulersubheading{Soal Latihan Tambahan Aljabar Linier}
+\begin{eulerprompt}
+>A=[4,2;3,-1]; b=[11;2];
+>det(A)
+\end{eulerprompt}
+\begin{euleroutput}
+     -10.0000 
+\end{euleroutput}
+\begin{eulerprompt}
+>A\(\backslash\)b
+\end{eulerprompt}
+\begin{euleroutput}
+       1.5000 
+       2.5000 
+\end{euleroutput}
+\begin{eulerprompt}
+>inv(A)
+\end{eulerprompt}
+\begin{euleroutput}
+       0.1000      0.2000 
+       0.3000     -0.4000 
+\end{euleroutput}
+\eulerheading{Matriks Simbolik}
+\begin{eulercomment}
+Maxima memiliki matriks simbolik. Tentu saja, Maxima dapat digunakan
+untuk masalah aljabar linier sederhana. Kita bisa mendefinisikan
+matriks untuk Euler dan Maxima dengan \&:=, dan kemudian menggunakannya
+dalam ekspresi simbolik. Bentuk [...] yang biasa untuk mendefinisikan
+matriks dapat digunakan dalam Euler untuk mendefinisikan matriks
+simbolik.
+\end{eulercomment}
+\begin{eulerprompt}
+>A &= [a,1,1;1,a,1;1,1,a]; $A
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\begin{pmatrix}a & 1 & 1 \\ 1 & a & 1 \\ 1 & 1 & a \\ \end{pmatrix}
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&det(A), $&factor(%)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\left(a-1\right)^2\,\left(a+2\right)
+\]
+\end{eulerformula}
+\eulerimg{0}{images/Icha Nur Oktaviani Hartono_23030630027_EMT4aljabar-110-large.png}
+\begin{eulerprompt}
+>$&invert(A) with a=0
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\begin{pmatrix}-\frac{1}{2} & \frac{1}{2} & \frac{1}{2} \\ \frac{1  }{2} & -\frac{1}{2} & \frac{1}{2} \\ \frac{1}{2} & \frac{1}{2} & -  \frac{1}{2} \\ \end{pmatrix}
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>A &= [1,a;b,2]; $A
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\begin{pmatrix}1 & a \\ b & 2 \\ \end{pmatrix}
+\]
+\end{eulerformula}
+\begin{eulercomment}
+Seperti semua variabel simbolik, matriks ini dapat digunakan dalam
+ekspresi simbolik lainnya.
+\end{eulercomment}
+\begin{eulerprompt}
+>$&det(A-x*ident(2)), $&solve(%,x)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\left[ x=\frac{3-\sqrt{4\,a\,b+1}}{2} , x=\frac{\sqrt{4\,a\,b+1}+3  }{2} \right] 
+\]
+\end{eulerformula}
+\eulerimg{1}{images/Icha Nur Oktaviani Hartono_23030630027_EMT4aljabar-114-large.png}
+\begin{eulercomment}
+Nilai eigen juga dapat dihitung secara otomatis. Hasilnya adalah
+sebuah vektor dengan dua vektor nilai eigen dan kelipatannya.
+\end{eulercomment}
+\begin{eulerprompt}
+>$&eigenvalues([a,1;1,a])
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\left[ \left[ a-1 , a+1 \right]  , \left[ 1 , 1 \right]  \right] 
+\]
+\end{eulerformula}
+\begin{eulercomment}
+Untuk mengekstrak vektor eigen tertentu, diperlukan pengindeksan yang
+cermat.
+\end{eulercomment}
+\begin{eulerprompt}
+>$&eigenvectors([a,1;1,a]), &%[2][1][1]
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\left[ \left[ \left[ a-1 , a+1 \right]  , \left[ 1 , 1 \right]    \right]  , \left[ \left[ \left[ 1 , -1 \right]  \right]  , \left[   \left[ 1 , 1 \right]  \right]  \right]  \right] 
+\]
+\end{eulerformula}
+\begin{euleroutput}
+  
+                                 [1, - 1]
+  
+\end{euleroutput}
+\begin{eulercomment}
+Matriks simbolik dapat dievaluasi dalam Euler secara numerik seperti
+halnya ekspresi simbolik lainnya.
+\end{eulercomment}
+\begin{eulerprompt}
+>A(a=4,b=5)
+\end{eulerprompt}
+\begin{euleroutput}
+       1.0000      4.0000 
+       5.0000      2.0000 
+\end{euleroutput}
+\begin{eulercomment}
+Dalam ekspresi simbolik, gunakan with.
+\end{eulercomment}
+\begin{eulerprompt}
+>$&A with [a=4,b=5]
+\end{eulerprompt}
+\begin{eulercomment}
+Akses ke baris matriks simbolik bekerja seperti halnya matriks
+numerik.
+\end{eulercomment}
+\begin{eulerprompt}
+>$&A[1]
+\end{eulerprompt}
+\begin{eulercomment}
+Ekspresi simbolik dapat berisi sebuah penugasan. Dan itu mengubah
+matriks A.
+\end{eulercomment}
+\begin{eulerprompt}
+>&A[1,1]:=t+1; $&A
+\end{eulerprompt}
+\begin{eulercomment}
+Terdapat fungsi-fungsi simbolik dalam Maxima untuk membuat vektor dan
+matriks. Untuk hal ini, lihat dokumentasi Maxima atau tutorial tentang
+Maxima di EMT.
+\end{eulercomment}
+\begin{eulerprompt}
+>v &= makelist(1/(i+j),i,1,3); $v
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\left[ \frac{1}{j+1} , \frac{1}{j+2} , \frac{1}{j+3} \right] 
+\]
+\end{eulerformula}
+\begin{eulerttcomment}
+ 
+\end{eulerttcomment}
+\begin{eulerprompt}
+>B &:= [1,2;3,4]; $B, $&invert(B)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\begin{pmatrix}-2 & 1 \\ \frac{3}{2} & -\frac{1}{2} \\   \end{pmatrix}
+\]
+\end{eulerformula}
+\eulerimg{1}{images/Icha Nur Oktaviani Hartono_23030630027_EMT4aljabar-119-large.png}
+\begin{eulercomment}
+Hasilnya dapat dievaluasi secara numerik dalam Euler. Untuk informasi
+lebih lanjut tentang Maxima, lihat pengantar Maxima.
+\end{eulercomment}
+\begin{eulerprompt}
+>$&invert(B)()
+\end{eulerprompt}
+\begin{euleroutput}
+             -2             1 
+            1.5          -0.5 
+\end{euleroutput}
+\begin{eulercomment}
+Euler juga memiliki sebuah fungsi yang kuat xinv(), yang melakukan
+usaha yang lebih besar dan mendapatkan hasil yang lebih tepat.
+
+
+Perhatikan, bahwa dengan \&:= matriks B telah didefinisikan sebagai
+simbolik dalam ekspresi simbolik dan sebagai numerik dalam ekspresi
+numerik. Jadi kita dapat menggunakannya di sini.
+\end{eulercomment}
+\begin{eulerprompt}
+>longest B.xinv(B)
+\end{eulerprompt}
+\begin{euleroutput}
+                        1                       0 
+                        0                       1 
+\end{euleroutput}
+\begin{eulercomment}
+Sebagai contoh, nilai eigen dari A dapat diperasikan secara numerik.
+\end{eulercomment}
+\begin{eulerprompt}
+>A=[1,2,3;4,5,6;7,8,9]; real(eigenvalues(A))
+\end{eulerprompt}
+\begin{euleroutput}
+      16.1168     -1.1168     -0.0000 
+\end{euleroutput}
+\begin{eulercomment}
+Atau secara simbolik. Lihat tutorial mengenai Maxima untuk lebih
+detail menegnai hal ini.
+\end{eulercomment}
+\begin{eulerprompt}
+>$&eigenvalues(@A)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\left[ \left[ \frac{15-3\,\sqrt{33}}{2} , \frac{3\,\sqrt{33}+15}{2}   , 0 \right]  , \left[ 1 , 1 , 1 \right]  \right] 
+\]
+\end{eulerformula}
+\eulersubheading{Soal Latihan Tambahan Matriks Simbolik}
+\begin{eulerprompt}
+>A = [-1,2,-3,1;-1,1,1,-1;1,1,1,1;-1,1,-1,-1]; $A
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\begin{pmatrix}1 & a \\ b & 2 \\ \end{pmatrix}
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>invert(A)
+\end{eulerprompt}
+\begin{euleroutput}
+      -0.5000     -1.0000      0.7500      1.2500 
+       0.0000      0.0000      0.5000      0.5000 
+       0.0000      0.5000      0.0000     -0.5000 
+       0.5000      0.5000     -0.2500     -1.2500 
+\end{euleroutput}
+\begin{eulerprompt}
+>B &= [6,13,a;8,b,19;c,11,2]; $B
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\begin{pmatrix}6 & 13 & a \\ 8 & b & 19 \\ c & 11 & 2 \\   \end{pmatrix}
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&B with [a=10,b=6,c=1]
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\begin{pmatrix}6 & 13 & 10 \\ 8 & 6 & 19 \\ 1 & 11 & 2 \\   \end{pmatrix}
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&invert(B)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\begin{pmatrix}\frac{2\,b-209}{a\,\left(88-b\,c\right)+13\,\left(19  \,c-16\right)+6\,\left(2\,b-209\right)} & \frac{11\,a-26}{a\,\left(  88-b\,c\right)+13\,\left(19\,c-16\right)+6\,\left(2\,b-209\right)}   & \frac{247-a\,b}{a\,\left(88-b\,c\right)+13\,\left(19\,c-16\right)  +6\,\left(2\,b-209\right)} \\ \frac{19\,c-16}{a\,\left(88-b\,c  \right)+13\,\left(19\,c-16\right)+6\,\left(2\,b-209\right)} & \frac{  12-a\,c}{a\,\left(88-b\,c\right)+13\,\left(19\,c-16\right)+6\,\left(  2\,b-209\right)} & \frac{8\,a-114}{a\,\left(88-b\,c\right)+13\,  \left(19\,c-16\right)+6\,\left(2\,b-209\right)} \\ \frac{88-b\,c}{a  \,\left(88-b\,c\right)+13\,\left(19\,c-16\right)+6\,\left(2\,b-209  \right)} & \frac{13\,c-66}{a\,\left(88-b\,c\right)+13\,\left(19\,c-  16\right)+6\,\left(2\,b-209\right)} & \frac{6\,b-104}{a\,\left(88-b  \,c\right)+13\,\left(19\,c-16\right)+6\,\left(2\,b-209\right)} \\   \end{pmatrix}
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&eigenvalues(@A)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\left[ \left[ -\frac{23\,\left(\frac{\sqrt{3}\,i}{2}-\frac{1}{2}  \right)}{9\,\left(\frac{4\,\sqrt{29}}{3^{\frac{3}{2}}}+\frac{19}{27}  \right)^{\frac{1}{3}}}+\left(\frac{4\,\sqrt{29}}{3^{\frac{3}{2}}}+  \frac{19}{27}\right)^{\frac{1}{3}}\,\left(-\frac{\sqrt{3}\,i}{2}-  \frac{1}{2}\right)-\frac{2}{3} , \left(\frac{4\,\sqrt{29}}{3^{\frac{  3}{2}}}+\frac{19}{27}\right)^{\frac{1}{3}}\,\left(\frac{\sqrt{3}\,i  }{2}-\frac{1}{2}\right)-\frac{23\,\left(-\frac{\sqrt{3}\,i}{2}-  \frac{1}{2}\right)}{9\,\left(\frac{4\,\sqrt{29}}{3^{\frac{3}{2}}}+  \frac{19}{27}\right)^{\frac{1}{3}}}-\frac{2}{3} , \left(\frac{4\,  \sqrt{29}}{3^{\frac{3}{2}}}+\frac{19}{27}\right)^{\frac{1}{3}}-  \frac{23}{9\,\left(\frac{4\,\sqrt{29}}{3^{\frac{3}{2}}}+\frac{19}{27  }\right)^{\frac{1}{3}}}-\frac{2}{3} , 2 \right]  , \left[ 1 , 1 , 1   , 1 \right]  \right] 
+\]
+\end{eulerformula}
+\eulerheading{Nilai Numerik dalam Ekspresi simbolik}
+\begin{eulercomment}
+Ekspresi simbolik hanyalah sebuah string yang berisi ekspresi. Jika
+kita ingin mendefinisikan nilai baik untuk ekspresi simbolik maupun
+ekspresi numerik, kita harus menggunakan “\&:=”.
+\end{eulercomment}
+\begin{eulerprompt}
+>A &:= [1,pi;4,5]
+\end{eulerprompt}
+\begin{euleroutput}
+              1       3.14159 
+              4             5 
+\end{euleroutput}
+\begin{eulercomment}
+Masih ada perbedaan antara bentuk numerik dan bentuk simbolik. Ketika
+mentransfer matriks ke bentuk simbolik, perkiraan pecahan untuk
+bilangan real akan digunakan.
+\end{eulercomment}
+\begin{eulerprompt}
+>$&A
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\begin{pmatrix}1 & \frac{1146408}{364913} \\ 4 & 5 \\ \end{pmatrix}
+\]
+\end{eulerformula}
+\begin{eulercomment}
+Untuk menghindari ini, terdapat fungsi "mxmset(variable)".
+\end{eulercomment}
+\begin{eulerprompt}
+>mxmset(A); $&A
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\begin{pmatrix}1 & 3.141592653589793 \\ 4 & 5 \\ \end{pmatrix}
+\]
+\end{eulerformula}
+\begin{eulercomment}
+Maxima juga dapat mengoperasikan angka floating point, dan bahkan
+dengan angka mengambang yang besar dengan 32 digit. Namun, evaluasinya
+jauh lebih lambat.
+\end{eulercomment}
+\begin{eulerprompt}
+>$&bfloat(sqrt(2)), $&float(sqrt(2))
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+1.414213562373095
+\]
+\end{eulerformula}
+\eulerimg{0}{images/Icha Nur Oktaviani Hartono_23030630027_EMT4aljabar-129-large.png}
+\begin{eulercomment}
+Ketepatan angka floating point yang besar dapat diubah.
+\end{eulercomment}
+\begin{eulerprompt}
+>&fpprec:=100; &bfloat(pi)
+\end{eulerprompt}
+\begin{euleroutput}
+  
+         3.141592653589793238462643383279502884197169399375105820974944\(\backslash\)
+  592307816406286208998628034825342117068b0
+  
+\end{euleroutput}
+\begin{eulercomment}
+Variabel numerik dapat digunakan dalam ekspresi simbolik apa pun
+dengan menggunakan “@var”.
+
+
+Perhatikan bahwa ini hanya diperlukan, jika variabel telah
+didefinisikan dengan “:=” atau “=” sebagai variabel numerik.
+\end{eulercomment}
+\begin{eulerprompt}
+>B:=[1,pi;3,4]; $&det(@B)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+-5.424777960769379
+\]
+\end{eulerformula}
+\eulersubheading{Soal Latihan Tambahan Nilai Numerik dalam Ekspresi Simbolik}
+\begin{eulerprompt}
+>A &:= [8,12;pi,sqrt(pi)]
+\end{eulerprompt}
+\begin{euleroutput}
+       8.0000     12.0000 
+       3.1416      1.7725 
+\end{euleroutput}
+\begin{eulerprompt}
+>$&A
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\begin{pmatrix}8 & 12 \\ \frac{1146408}{364913} & \frac{582540}{  328663} \\ \end{pmatrix}
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>mxmset(A); $&A
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\begin{pmatrix}8 & 12 \\ 3.141592653589793 & 1.772453850905516 \\   \end{pmatrix}
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&float(E)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+2.718281828459045
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&det(@A)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+-18.43975113426441
+\]
+\end{eulerformula}
+\eulerheading{Demo - Suku Bunga}
+\begin{eulercomment}
+Di bawah ini, kami menggunakan Euler Math Toolbox (EMT) untuk
+menghitung suku bunga. Kami melakukannya secara numerik dan simbolis
+untuk menunjukkan kepada Anda bagaimana Euler dapat digunakan untuk
+memecahkan masalah kehidupan nyata.
+
+
+Asumsikan Anda memiliki modal awal sebesar 5000 (katakanlah dalam
+dolar).
+\end{eulercomment}
+\begin{eulerprompt}
+>K=5000
+\end{eulerprompt}
+\begin{euleroutput}
+      5000.00 
+\end{euleroutput}
+\begin{eulercomment}
+Sekarang kita asumsikan suku bunga 3\% per tahun. Mari kita tambahkan
+satu suku bunga sederhana dan hitung hasilnya.
+\end{eulercomment}
+\begin{eulerprompt}
+>K*1.03
+\end{eulerprompt}
+\begin{euleroutput}
+      5150.00 
+\end{euleroutput}
+\begin{eulercomment}
+Euler juga akan memahami sintaks berikut ini.
+\end{eulercomment}
+\begin{eulerprompt}
+>K+K*3%
+\end{eulerprompt}
+\begin{euleroutput}
+      5150.00 
+\end{euleroutput}
+\begin{eulercomment}
+Tetapi lebih mudah untuk menggunakan faktor
+\end{eulercomment}
+\begin{eulerprompt}
+>q=1+3%, K*q
+\end{eulerprompt}
+\begin{euleroutput}
+         1.03 
+      5150.00 
+\end{euleroutput}
+\begin{eulercomment}
+Untuk 10 tahun, kita cukup mengalikan faktor-faktor tersebut dan
+mendapatkan nilai akhir dengan suku bunga majemuk.
+\end{eulercomment}
+\begin{eulerprompt}
+>K*q^10
+\end{eulerprompt}
+\begin{euleroutput}
+      6719.58 
+\end{euleroutput}
+\begin{eulercomment}
+Untuk tujuan kita, kita bisa menetapkan formatnya menjadi 2 digit
+setelah titik desimal.
+\end{eulercomment}
+\begin{eulerprompt}
+>format(12,2); K*q^10
+\end{eulerprompt}
+\begin{euleroutput}
+      6719.58 
+\end{euleroutput}
+\begin{eulercomment}
+Mari kita cetak angka yang dibulatkan menjadi 2 digit dalam kalimat
+lengkap.
+\end{eulercomment}
+\begin{eulerprompt}
+>"Starting from " + K + "$ you get " + round(K*q^10,2) + "$."
+\end{eulerprompt}
+\begin{euleroutput}
+  Starting from 5000$ you get 6719.58$.
+\end{euleroutput}
+\begin{eulercomment}
+Bagaimana jika kita ingin mengetahui hasil antara dari tahun ke-1
+hingga tahun ke-9? Untuk hal ini, bahasa matriks Euler sangat
+membantu. Anda tidak perlu menulis perulangan, tetapi cukup masukkan
+\end{eulercomment}
+\begin{eulerprompt}
+>K*q^(0:10)
+\end{eulerprompt}
+\begin{euleroutput}
+  Real 1 x 11 matrix
+  
+      5000.00     5150.00     5304.50     5463.64     ...
+\end{euleroutput}
+\begin{eulercomment}
+Bagaimana keajaiban ini bekerja? Pertama, ekspresi 0:10 mengembalikan
+sebuah vektor bilangan bulat.
+\end{eulercomment}
+\begin{eulerprompt}
+>short 0:10
+\end{eulerprompt}
+\begin{euleroutput}
+  [0,  1,  2,  3,  4,  5,  6,  7,  8,  9,  10]
+\end{euleroutput}
+\begin{eulercomment}
+Kemudian semua operator dan fungsi dalam Euler dapat diterapkan pada
+vektor elemen demi elemen. Jadi
+\end{eulercomment}
+\begin{eulerprompt}
+>short q^(0:10)
+\end{eulerprompt}
+\begin{euleroutput}
+  [1,  1.03,  1.0609,  1.0927,  1.1255,  1.1593,  1.1941,  1.2299,
+  1.2668,  1.3048,  1.3439]
+\end{euleroutput}
+\begin{eulercomment}
+adalah vektor faktor q\textasciicircum{}0 hingga q\textasciicircum{}10. Ini dikalikan dengan K, dan kita
+mendapatkan vektor nilai.
+\end{eulercomment}
+\begin{eulerprompt}
+>VK=K*q^(0:10);
+\end{eulerprompt}
+\begin{eulercomment}
+Tentu saja, cara yang realistis untuk menghitung suku bunga ini adalah
+dengan membulatkan ke sen terdekat setelah setiap tahun. Mari kita
+tambahkan fungsi untuk ini.
+\end{eulercomment}
+\begin{eulerprompt}
+>function oneyear (K) := round(K*q,2)
+\end{eulerprompt}
+\begin{eulercomment}
+Mari kita bandingkan kedua hasil tersebut, dengan dan tanpa
+pembulatan.
+\end{eulercomment}
+\begin{eulerprompt}
+>longest oneyear(1234.57), longest 1234.57*q
+\end{eulerprompt}
+\begin{euleroutput}
+                  1271.61 
+                1271.6071 
+\end{euleroutput}
+\begin{eulercomment}
+Sekarang tidak ada rumus sederhana untuk tahun ke-n, dan kita harus
+mengulang selama bertahun-tahun. Euler menyediakan banyak solusi untuk
+ini.
+
+
+Cara termudah adalah iterasi fungsi, yang mengulang fungsi yang
+diberikan beberapa kali.
+\end{eulercomment}
+\begin{eulerprompt}
+>VKr=iterate("oneyear",5000,10)
+\end{eulerprompt}
+\begin{euleroutput}
+  Real 1 x 11 matrix
+  
+      5000.00     5150.00     5304.50     5463.64     ...
+\end{euleroutput}
+\begin{eulercomment}
+Kita bisa mencetaknya dengan cara yang bersahabat, menggunakan format
+kami dengan angka desimal yang tetap.
+\end{eulercomment}
+\begin{eulerprompt}
+>VKr'
+\end{eulerprompt}
+\begin{euleroutput}
+      5000.00 
+      5150.00 
+      5304.50 
+      5463.64 
+      5627.55 
+      5796.38 
+      5970.27 
+      6149.38 
+      6333.86 
+      6523.88 
+      6719.60 
+\end{euleroutput}
+\begin{eulercomment}
+Untuk mendapatkan elemen tertentu dari vektor, kita menggunakan indeks
+dalam tanda kurung siku.
+\end{eulercomment}
+\begin{eulerprompt}
+>VKr[2], VKr[1:3]
+\end{eulerprompt}
+\begin{euleroutput}
+      5150.00 
+      5000.00     5150.00     5304.50 
+\end{euleroutput}
+\begin{eulercomment}
+Yang mengejutkan, kita juga dapat menggunakan vektor indeks. Ingatlah
+bahwa 1:3 menghasilkan vektor [1,2,3].
+
+
+Mari kita bandingkan elemen terakhir dari nilai yang dibulatkan dengan
+nilai penuh.
+\end{eulercomment}
+\begin{eulerprompt}
+>VKr[-1], VK[-1]
+\end{eulerprompt}
+\begin{euleroutput}
+      6719.60 
+      6719.58 
+\end{euleroutput}
+\begin{eulercomment}
+Perbedaannya sangat kecil.
+
+\end{eulercomment}
+\eulersubheading{Soal Latihan Tambahan Demo-Suku Bunga}
+\begin{eulercomment}
+1. Sebuah rumah dijual dengan harga \textdollar{}98,000 dengan uang muka sebanyak
+\textdollar{}16,000. Jika seseorang meminjam uang untuk membeli rumah tersebut
+dengan lama pinjaman 25 tahun dan suku bunga 6.5\%, berapa jumlah yang
+harus dibayarkan oleh peminjam setiap bulannya. 
+\end{eulercomment}
+\begin{eulerprompt}
+>K=98000-16000, q=1+6.5%, format(12,2); (K*q^25)/(12*25)
+\end{eulerprompt}
+\begin{euleroutput}
+     82000.00 
+         1.06 
+      1319.57 
+\end{euleroutput}
+\begin{eulercomment}
+Jumlah yang harus dibayarkan setiap bulannya adalah \textdollar{}1319.57
+
+2. Sebuah rumah dijual dengan harga \textdollar{}124,000 dengan uang muka sebanyak
+\textdollar{}20,000. Jika seseorang meminjam uang untuk membeli rumah tersebut
+dengan lama pinjaman 30 tahun dan suku bunga 5.75\%, berapa jumlah yang
+harus dibayarkan oleh peminjam setiap bulannya.
+\end{eulercomment}
+\begin{eulerprompt}
+>K=124000-20000, q=1+5.75%, format(12,2); (K*q^30)/(12*30)
+\end{eulerprompt}
+\begin{euleroutput}
+  104000.0000 
+       1.0575 
+      1545.76 
+\end{euleroutput}
+\begin{eulercomment}
+Jumlah yang harus dibayarkan setiap bulannya adalah \textdollar{}1545.76
+
+3. Sebuah rumah dijual dengan harga \textdollar{}135,000 dengan uang muka sebanyak
+\textdollar{}18,000. Jika seseorang meminjam uang untuk membeli rumah tersebut
+dengan lama pinjaman 20 tahun dan suku bunga 7.5\%, berapa jumlah yang
+harus dibayarkan oleh peminjam setiap bulannya.
+\end{eulercomment}
+\begin{eulerprompt}
+>K=135000-18000, q=1+7.5%, format(12,2); (K*q^20)/(12*20)
+\end{eulerprompt}
+\begin{euleroutput}
+    117000.00 
+         1.07 
+      2070.83 
+\end{euleroutput}
+\begin{eulercomment}
+Jumlah yang harus dibayarkan setiap bulannya adalah \textdollar{}2070.83
+
+4. Sebuah rumah dijual dengan harga \textdollar{}151,000 dengan uang muka sebanyak
+\textdollar{}21,000. Jika seseorang meminjam uang untuk membeli rumah tersebut
+dengan lama pinjaman 25 tahun dan suku bunga 6.25\%, berapa jumlah yang
+harus dibayarkan oleh peminjam setiap bulannya.
+\end{eulercomment}
+\begin{eulerprompt}
+>K=151000-21000, q=1+6.25%, format(12,2); (K*q^25)/(12*25)
+\end{eulerprompt}
+\begin{euleroutput}
+    130000.00 
+         1.06 
+      1972.63 
+\end{euleroutput}
+\begin{eulercomment}
+Jumlah yang harus dibayarkan setiap bulannya adalah \textdollar{}1972.63
+
+\begin{eulercomment}
+\eulerheading{Menyelesaikan Persamaan}
+\begin{eulercomment}
+Sekarang kita ambil fungsi yang lebih maju, yang menambahkan tingkat
+uang tertentu setiap tahun.
+\end{eulercomment}
+\begin{eulerprompt}
+>function onepay (K) := K*q+R
+\end{eulerprompt}
+\begin{eulercomment}
+Kita tidak perlu menentukan q atau R untuk definisi fungsi. Hanya jika
+kita menjalankan perintah, kita harus mendefinisikan nilai-nilai ini.
+Kami memilih R = 200.
+\end{eulercomment}
+\begin{eulerprompt}
+>R=200; iterate("onepay",5000,10)
+\end{eulerprompt}
+\begin{euleroutput}
+  Real 1 x 11 matrix
+  
+      5000.00     5350.00     5710.50     6081.82     ...
+\end{euleroutput}
+\begin{eulercomment}
+Bagaimana jika kita menghapus jumlah yang sama setiap tahun?.
+\end{eulercomment}
+\begin{eulerprompt}
+>R=-200; iterate("onepay",5000,10)
+\end{eulerprompt}
+\begin{euleroutput}
+  Real 1 x 11 matrix
+  
+      5000.00     4950.00     4898.50     4845.45     ...
+\end{euleroutput}
+\begin{eulercomment}
+Kita melihat bahwa uangnya berkurang. Jelas, jika kita hanya
+mendapatkan 150 bunga di tahun pertama, tetapi menghapus 200, kita
+kehilangan uang setiap tahun.
+
+
+Bagaimana kita dapat menentukan berapa tahun uang itu akan bertahan?
+Kita harus menulis perulangan untuk ini. Cara termudah adalah dengan
+melakukan perulangan yang cukup lama.
+\end{eulercomment}
+\begin{eulerprompt}
+>VKR=iterate("onepay",5000,50)
+\end{eulerprompt}
+\begin{euleroutput}
+  Real 1 x 51 matrix
+  
+      5000.00     4950.00     4898.50     4845.45     ...
+\end{euleroutput}
+\begin{eulercomment}
+Dengan menggunakan bahasa matriks, kita dapat menentukan nilai negatif
+pertama dengan cara berikut.
+\end{eulercomment}
+\begin{eulerprompt}
+>min(nonzeros(VKR<0))
+\end{eulerprompt}
+\begin{euleroutput}
+        48.00 
+\end{euleroutput}
+\begin{eulercomment}
+Alasannya adalah karena nonzeros(VKR\textless{}0) mengembalikan vektor dengan
+indeks i, di mana VKR[i]\textless{}0, dan min menghitung indeks minimal.
+
+
+Karena vektor selalu dimulai dengan indeks 1, maka jawabannya adalah
+47 tahun.
+
+
+Fungsi iterate() memiliki satu trik lagi. Fungsi ini dapat menerima
+kondisi akhir sebagai argumen. Kemudian fungsi ini akan mengembalikan
+nilai dan jumlah iterasi.
+\end{eulercomment}
+\begin{eulerprompt}
+>\{x,n\}=iterate("onepay",5000,till="x<0"); x, n,
+\end{eulerprompt}
+\begin{euleroutput}
+       -19.83 
+        47.00 
+\end{euleroutput}
+\begin{eulercomment}
+Mari kita coba menjawab pertanyaan yang lebih ambigu. Anggaplah kita
+tahu bahwa nilainya adalah 0 setelah 50 tahun. Berapakah tingkat suku
+bunganya?
+
+
+Ini adalah pertanyaan yang hanya bisa dijawab secara numerik. Di bawah
+ini, kami akan menurunkan rumus yang diperlukan. Kemudian Anda akan
+melihat bahwa tidak ada rumus yang mudah untuk suku bunga. Namun untuk
+saat ini, kita akan mencari solusi numerik.
+
+
+Langkah pertama adalah mendefinisikan sebuah fungsi yang melakukan
+iterasi sebanyak n kali. Kita tambahkan semua parameter ke fungsi ini.
+\end{eulercomment}
+\begin{eulerprompt}
+>function f(K,R,P,n) := iterate("x*(1+P/100)+R",K,n;P,R)[-1]
+\end{eulerprompt}
+\begin{eulercomment}
+Perulangannya sama seperti di atas
+
+
+\end{eulercomment}
+\begin{eulerformula}
+\[
+x_{n+1} = x_n \cdot \kiri(1+ \frac{P}{100}\kanan) + R
+\]
+\end{eulerformula}
+\begin{eulercomment}
+Tetapi kita tidak lagi menggunakan nilai global R dalam ekspresi kita.
+Fungsi-fungsi seperti iterate() memiliki trik khusus dalam Euler. Anda
+bisa mengoper nilai variabel dalam ekspresi sebagai parameter titik
+koma. Dalam hal ini P dan R.
+
+
+Selain itu, kita hanya tertarik pada nilai terakhir. Jadi kita
+mengambil indeks [-1].
+
+
+Mari kita coba sebuah tes.
+\end{eulercomment}
+\begin{eulerprompt}
+>f(5000,-200,3,47)
+\end{eulerprompt}
+\begin{euleroutput}
+       -19.83 
+\end{euleroutput}
+\begin{eulercomment}
+Sekarang kita dapat menyelesaikan masalah kita.
+\end{eulercomment}
+\begin{eulerprompt}
+>solve("f(5000,-200,x,50)",3)
+\end{eulerprompt}
+\begin{euleroutput}
+         3.15 
+\end{euleroutput}
+\begin{eulercomment}
+Rutin penyelesaian menyelesaikan ekspresi = 0 untuk variabel x.
+Jawabannya adalah 3,15\% per tahun. Kita mengambil nilai awal 3\% untuk
+algoritma ini. Fungsi solve() selalu membutuhkan nilai awal.
+
+
+Kita dapat menggunakan fungsi yang sama untuk menyelesaikan pertanyaan
+berikut: Berapa banyak yang dapat kita hapus per tahun sehingga modal
+awal habis setelah 20 tahun dengan asumsi tingkat bunga 3\% per tahun.
+\end{eulercomment}
+\begin{eulerprompt}
+>solve("f(5000,x,3,20)",-200)
+\end{eulerprompt}
+\begin{euleroutput}
+      -336.08 
+\end{euleroutput}
+\begin{eulercomment}
+Perhatikan bahwa Anda tidak dapat menyelesaikan jumlah tahun, karena
+fungsi kita mengasumsikan n sebagai nilai bilangan bulat.
+
+\end{eulercomment}
+\eulersubheading{Soal Latihan Tambahan Penyelesaiian Persamaan}
+\begin{eulercomment}
+1. Selesaikan persamaan dibawah ini\\
+\end{eulercomment}
+\begin{eulerformula}
+\[
+7(3x+6)=11-(x+2)
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&solve(7*(3*x+6)=11-(x+2))
+\end{eulerprompt}
+\begin{eulercomment}
+2. Selesaikan persamaan dibawah ini\\
+\end{eulercomment}
+\begin{eulerformula}
+\[
+9(2x+8)=20-(x+5)
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&solve(9*(2*x+8)=20-(x+5))
+\end{eulerprompt}
+\begin{eulercomment}
+3. Selesaikan persamaan dibawah ini\\
+\end{eulercomment}
+\begin{eulerformula}
+\[
+4(3y-1)-6=5(y+2)
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&solve(4*(3*y-1)-6=5*(y+2))
+\end{eulerprompt}
+\begin{eulercomment}
+4. Selesaikan persamaan dibawah ini\\
+\end{eulercomment}
+\begin{eulerformula}
+\[
+3y^{2}+8y+4=0
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&solve(3*y^2+8*y+4=0)
+\end{eulerprompt}
+\begin{eulercomment}
+5. Selesaikan persamaan dibawah ini\\
+\end{eulercomment}
+\begin{eulerformula}
+\[
+5x^{2}-75=0
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>$&solve(5*x^2-75=0)
+\end{eulerprompt}
+\begin{eulerformula}
+\[
+\left[ x=-\sqrt{15} , x=\sqrt{15} \right] 
+\]
+\end{eulerformula}
+\eulersubheading{Solusi Simbolik untuk Masalah Suku Bunga}
+\begin{eulercomment}
+Kita dapat menggunakan bagian simbolik dari Euler untuk mempelajari
+masalah ini. Pertama, kita mendefinisikan fungsi onepay() secara
+simbolik.
+\end{eulercomment}
+\begin{eulerprompt}
+>function op(K) &= K*q+R; $&op(K)
+\end{eulerprompt}
+\begin{eulercomment}
+Sekarang kita dapat mengiterasi ini
+\end{eulercomment}
+\begin{eulerprompt}
+>$&op(op(op(op(K)))), $&expand(%)
+\end{eulerprompt}
+\begin{euleroutput}
+  Maxima said:
+  part: argument must be a non-atomic expression; found K
+   -- an error. To debug this try: debugmode(true);
+  
+  Error in:
+   $&op(op(op(op(K)))),$&expand(%) ...
+                     ^
+\end{euleroutput}
+\begin{eulercomment}
+Kita melihat sebuah pola. Setelah n periode, kita memiliki
+
+
+lateks: K\_n = q\textasciicircum{}n K + R (1+q+\textbackslash{} titik-titik+q\textasciicircum{}\{n-1\}) = q\textasciicircum{}n K +
+\textbackslash{}frac\{q\textasciicircum{}n-1\}\{q-1\} R
+
+
+Rumus tersebut adalah rumus untuk jumlah geometris, yang dikenal
+dengan Maxima.
+\end{eulercomment}
+\begin{eulerprompt}
+>&sum(q^k,k,0,n-1); $& % = ev(%,simpsum)
+\end{eulerprompt}
+\begin{eulercomment}
+Ini sedikit rumit. Penjumlahan dievaluasi dengan flag “simpsum” untuk
+menguranginya menjadi hasil bagi.\\
+Mari kita buat sebuah fungsi untuk ini.
+\end{eulercomment}
+\begin{eulerprompt}
+>function fs(K,R,P,n) &= (1+P/100)^n*K + ((1+P/100)^n-1)/(P/100)*R; $&fs(K,R,P,n)
+\end{eulerprompt}
+\begin{eulercomment}
+Fungsi ini melakukan hal yang sama seperti fungsi f kita sebelumnya.
+Tetapi fungsi ini lebih efektif.
+\end{eulercomment}
+\begin{eulerprompt}
+>longest f(5000,-200,3,47), longest fs(5000,-200,3,47)
+\end{eulerprompt}
+\begin{euleroutput}
+       -19.82504734650985 
+       -19.82504734652684 
+\end{euleroutput}
+\begin{eulercomment}
+Sekarang kita dapat menggunakannya untuk menanyakan waktu n. Kapan
+modal kita habis? Perkiraan awal kita adalah 30 tahun.
+\end{eulercomment}
+\begin{eulerprompt}
+>solve("fs(5000,-330,3,x)",30)
+\end{eulerprompt}
+\begin{euleroutput}
+        20.51 
+\end{euleroutput}
+\begin{eulercomment}
+Jawaban ini mengatakan bahwa nilai tersebut akan menjadi negatif
+setelah 21 tahun.
+
+
+Kita juga bisa menggunakan sisi simbolis dari Euler untuk menghitung
+rumus pembayaran.
+
+
+Asumsikan kita mendapatkan pinjaman sebesar K, dan membayar n kali
+pembayaran sebesar R (dimulai setelah tahun pertama) sehingga
+menyisakan sisa utang sebesar Kn (pada saat pembayaran terakhir).
+Rumus untuk hal ini adalah sebagai berikut
+\end{eulercomment}
+\begin{eulerprompt}
+>equ &= fs(K,R,P,n)=Kn; $&equ
+\end{eulerprompt}
+\begin{eulercomment}
+Biasanya rumus ini diberikan dalam bentuk
+
+\end{eulercomment}
+\begin{eulerformula}
+\[
+i = \frac{P}{100}
+\]
+\end{eulerformula}
+\begin{eulerprompt}
+>equ &= (equ with P=100*i); $&equ
+\end{eulerprompt}
+\begin{eulercomment}
+Kita dapat menyelesaikan laju R secara simbolis.
+\end{eulercomment}
+\begin{eulerprompt}
+>$&solve(equ,R)
+\end{eulerprompt}
+\begin{eulercomment}
+Seperti yang dapat Anda lihat dari rumusnya, fungsi ini mengembalikan
+kesalahan floating point untuk i = 0. Euler tetap memplotnya.
+
+
+Tentu saja, kita memiliki batas berikut.
+\end{eulercomment}
+\begin{eulerprompt}
+>$&limit(R(5000,0,x,10),x,0)
+\end{eulerprompt}
+\begin{eulercomment}
+Jelasnya, tanpa bunga kita harus membayar kembali 10 suku bunga 500.
+
+
+Persamaan ini juga dapat diselesaikan untuk n. Akan terlihat lebih
+baik jika kita menerapkan beberapa penyederhanaan.
+\end{eulercomment}
+\begin{eulerprompt}
+>fn &= solve(equ,n) | ratsimp; $&fn
+\end{eulerprompt}
+\end{eulernotebook}
+\end{document}
